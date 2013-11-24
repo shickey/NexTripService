@@ -67,7 +67,13 @@
     [self.manager GET:endpoint parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         if (completion) {
             NSArray *json = (NSArray *)responseObject;
-            completion(json, nil);
+            NSMutableArray *directionVOs = [[NSMutableArray alloc] init];
+            for (NSDictionary *jsonDirection in json) {
+                NTDirection *directionVO = [NTDirection valueObjectFromJSON:jsonDirection];
+                [directionVOs addObject:directionVO];
+            }
+            NSArray *immutableDirections = [NSArray arrayWithArray:directionVOs];
+            completion(immutableDirections, nil);
         }
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         if (completion) {
