@@ -31,8 +31,13 @@
 {
     NSString *validJSONDate = @"/Date(1385308020000-0600)/";
     NSDate *date = [NSDate dateWithJSONDate:validJSONDate];
-//    NSString *dateString = [date descriptionWithCalendarFormat:@"%H:%M" timeZone:[NSTimeZone timeZoneWithAbbreviation:@"CST"] locale:nil];
-//    XCTAssert([dateString isEqualToString:@"09:47"], @"Time strings are not equal. Expected: %@, Got: %@", @"09:47", dateString);
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"hh:mm"];
+    [formatter setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"CST"]];
+    
+    NSString *dateString = [formatter stringFromDate:date];
+    XCTAssert([dateString isEqualToString:@"09:47"], @"Time strings are not equal. Expected: %@, Got: %@", @"09:47", dateString);
 }
 
 @end
