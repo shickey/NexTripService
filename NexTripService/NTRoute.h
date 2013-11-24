@@ -6,10 +6,9 @@
 //
 //
 
-#import <Foundation/Foundation.h>
 #import "NTValueObject.h"
 
-@interface NTRouteVO : NTValueObject
+@interface NTRoute : NTValueObject
 
 @property (copy, nonatomic) NSString *routeDescription;
 @property (copy, nonatomic) NSString *providerId;

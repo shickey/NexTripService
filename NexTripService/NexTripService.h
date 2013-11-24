@@ -11,8 +11,8 @@
 #ifndef _NEXTRIPSERVICE_
 #define _NEXTRIPESRVICE_
 
-    #import "NTValueObject.h"
-    #import "NTRouteVO.h"
-    #import "NTStopVO.h"
+    #import "NTRoute.h"
+    #import "NTStop.h"
+    #import "NTDeparture.h"
 
 #endif /* _NEXTRIPSERVICE */

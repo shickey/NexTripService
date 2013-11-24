@@ -6,10 +6,9 @@
 //
 //
 
-#import <Foundation/Foundation.h>
 #import "NTValueObject.h"
 
-@interface NTStopVO : NTValueObject
+@interface NTStop : NTValueObject
 
 @property (copy, nonatomic) NSString *name;
 @property (copy, nonatomic) NSString *identifier;

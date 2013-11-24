@@ -6,9 +6,9 @@
 //
 //
 
-#import "NTStopVO.h"
+#import "NTStop.h"
 
-@implementation NTStopVO
+@implementation NTStop
 
 + (NSDictionary *)jsonMapping
 {

@@ -7,6 +7,7 @@
 //
 
 #import "NTValueObject.h"
+#import "NSDate+NexTripService.h"
 
 @implementation NTValueObject
 
@@ -14,10 +15,17 @@
 {
     NTValueObject *vo = [[self alloc] init];
     NSDictionary *mapping = [self jsonMapping];
+    NSDictionary *valueTypes = [self jsonValueTypes];
+    
     for (NSString *jsonKey in mapping) {
         if (json[jsonKey]) {
             NSString *voKey = mapping[jsonKey];
             id value = json[jsonKey];
+            if (valueTypes[jsonKey]) {
+                if ([valueTypes[jsonKey] integerValue] == NTJSONValueTypeDate) {
+                    value = [NSDate dateWithJSONDate:value];
+                }
+            }
             [vo setValue:value forKey:voKey];
         }
     }
@@ -25,6 +33,11 @@
 }
 
 + (NSDictionary *)jsonMapping
+{
+    return nil;
+}
+
++ (NSDictionary *)jsonValueTypes
 {
     return nil;
 }

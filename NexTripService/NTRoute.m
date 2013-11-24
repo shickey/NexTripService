@@ -6,9 +6,9 @@
 //
 //
 
-#import "NTRouteVO.h"
+#import "NTRoute.h"
 
-@implementation NTRouteVO
+@implementation NTRoute
 
 + (NSDictionary *)jsonMapping
 {
