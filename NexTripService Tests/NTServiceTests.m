@@ -8,9 +8,12 @@
 
 #import <XCTest/XCTest.h>
 #import "NTService.h"
+#import "NTRoute.h"
 #import "TRVSMonitor.h"
 
 @interface NTServiceTests : XCTestCase
+
+- (NTRoute *)validRoute;
 
 @end
 
@@ -38,9 +41,33 @@
         [monitor signal];
     }];
     
-    [monitor wait];
+    [monitor waitWithTimeout:5];
     
     XCTAssertNotNil(returnedRoutes);
+}
+
+- (void)testDirectionFetching
+{
+    __block TRVSMonitor *monitor = [TRVSMonitor monitor];
+    __block NSArray *returnedDirections = nil;
+    NTService *service = [[NTService alloc] init];
+    [service requestDirectionsForRoute:[self validRoute] withCompletion:^(NSArray *directions, NSError *error) {
+        returnedDirections = directions;
+        [monitor signal];
+    }];
+    
+    [monitor waitWithTimeout:5];
+    
+    XCTAssertNotNil(returnedDirections);
+}
+
+#pragma mark - Helper Methods
+
+- (NTRoute *)validRoute
+{
+    return [NTRoute valueObjectFromJSON:@{@"ProviderID"  : @"8",
+                                          @"Route"       : @"3",
+                                          @"Description" : @"3 - U of M - Como Av - Energy Park Dr - Maryland Av"}];
 }
 
 @end

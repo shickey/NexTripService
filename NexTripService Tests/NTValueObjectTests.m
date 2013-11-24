@@ -37,8 +37,8 @@
     NSDictionary *routeDict = [self validRouteDictionary];
     NTRoute *vo = [NTRoute valueObjectFromJSON:routeDict];
     XCTAssertEqual(routeDict[@"Description"], vo.routeDescription, @"Route description was not set properly. Expected %@, Got %@", routeDict[@"Description"], vo.routeDescription);
-    XCTAssertEqual(routeDict[@"ProviderID"], vo.providerId, @"Provider Id was not set properly. Expected %@, Got %@", routeDict[@"ProviderID"], vo.providerId);
-    XCTAssertEqual(routeDict[@"Route"], vo.routeNumber, @"Route number was not set properly. Expected %@, Got %@", routeDict[@"Route"], vo.routeNumber);
+    XCTAssert([routeDict[@"ProviderID"] integerValue] == vo.providerId, @"Provider Id was not set properly. Expected %@, Got %ld", routeDict[@"ProviderID"], (long)vo.providerId);
+    XCTAssert([routeDict[@"Route"] integerValue] == vo.routeNumber, @"Route number was not set properly. Expected %@, Got %ld", routeDict[@"Route"], (long)vo.routeNumber);
 }
 
 - (void)testCreatesStopVOWithValidStopDictionary

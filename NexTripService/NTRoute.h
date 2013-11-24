@@ -11,7 +11,7 @@
 @interface NTRoute : NTValueObject
 
 @property (copy, nonatomic) NSString *routeDescription;
-@property (copy, nonatomic) NSString *providerId;
-@property (copy, nonatomic) NSString *routeNumber;
+@property (assign, nonatomic) NSInteger providerId;
+@property (assign, nonatomic) NSInteger routeNumber;
 
 @end

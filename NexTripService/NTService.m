@@ -9,6 +9,9 @@
 #import "NTService.h"
 #import "NTConstants.h"
 #import "NTRoute.h"
+#import "NTDirection.h"
+#import "NTStop.h"
+#import "NTDeparture.h"
 #import "AFNetworking.h"
 
 @interface NTService ()
@@ -50,6 +53,21 @@
             }
             NSArray *immutableRoutes = [NSArray arrayWithArray:routeVOs];
             completion(immutableRoutes, nil);
+        }
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        if (completion) {
+            completion(nil, error);
+        }
+    }];
+}
+
+- (void)requestDirectionsForRoute:(NTRoute *)route withCompletion:(void(^)(NSArray *directions, NSError *error))completion
+{
+    NSString *endpoint = [NSString stringWithFormat:@"Directions/%ld", (long)route.routeNumber];
+    [self.manager GET:endpoint parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        if (completion) {
+            NSArray *json = (NSArray *)responseObject;
+            completion(json, nil);
         }
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         if (completion) {
