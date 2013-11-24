@@ -9,7 +9,7 @@
 #import "NTService.h"
 #import "NTConstants.h"
 #import "NTRoute.h"
-#import "AFNetworking/AFNetworking.h"
+#import "AFNetworking.h"
 
 @interface NTService ()
 
@@ -29,6 +29,9 @@
     self = [super init];
     if (self) {
         _manager = [[AFHTTPRequestOperationManager alloc] initWithBaseURL:[self baseURL]];
+        AFHTTPRequestSerializer *serializer = [AFHTTPRequestSerializer serializer];
+        [serializer setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+        _manager.requestSerializer = serializer;
     }
     return self;
 }

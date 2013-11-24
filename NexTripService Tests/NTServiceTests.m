@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "NTService.h"
+#import "TRVSMonitor.h"
 
 @interface NTServiceTests : XCTestCase
 
@@ -29,10 +30,17 @@
 
 - (void)testRouteFetching
 {
+    __block TRVSMonitor *monitor = [TRVSMonitor monitor];
+    __block NSArray *returnedRoutes = nil;
     NTService *service = [[NTService alloc] init];
     [service requestRoutesWithCompletion:^(NSArray *routes, NSError *error) {
-        NSLog(@"%@", routes);
+        returnedRoutes = routes;
+        [monitor signal];
     }];
+    
+    [monitor wait];
+    
+    XCTAssertNotNil(returnedRoutes);
 }
 
 @end
