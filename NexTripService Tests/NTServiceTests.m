@@ -9,11 +9,15 @@
 #import <XCTest/XCTest.h>
 #import "NTService.h"
 #import "NTRoute.h"
+#import "NTDirection.h"
+#import "NTStop.h"
 #import "TRVSMonitor.h"
 
 @interface NTServiceTests : XCTestCase
 
 - (NTRoute *)validRoute;
+- (NTDirection *)validDirection;
+- (NTStop *)validStop;
 
 @end
 
@@ -61,13 +65,40 @@
     XCTAssertNotNil(returnedDirections);
 }
 
+- (void)testStopFetching
+{
+    __block TRVSMonitor *monitor = [TRVSMonitor monitor];
+    __block NSArray *returnedStops = nil;
+    NTService *service = [[NTService alloc] init];
+    [service requestStopsForRoute:[self validRoute] direction:[self validDirection] withCompletion:^(NSArray *stops, NSError *error) {
+        returnedStops = stops;
+        [monitor signal];
+    }];
+    
+    [monitor waitWithTimeout:5];
+    
+    XCTAssertNotNil(returnedStops);
+}
+
 #pragma mark - Helper Methods
 
 - (NTRoute *)validRoute
 {
     return [NTRoute valueObjectFromJSON:@{@"ProviderID"  : @"8",
-                                          @"Route"       : @"3",
-                                          @"Description" : @"3 - U of M - Como Av - Energy Park Dr - Maryland Av"}];
+                                          @"Route"       : @"21",
+                                          @"Description" : @"21 - Uptown - Lake St - Selby  Av"}];
+}
+
+- (NTDirection *)validDirection
+{
+    return [NTDirection valueObjectFromJSON:@{@"Text"  : @"EASTBOUND",
+                                              @"Value" : @"2"}];
+}
+
+- (NTStop *)validStop
+{
+    return [NTStop valueObjectFromJSON:@{@"Text"  : @"Lake St/Midtown Station (Hiawatha Ave)",
+                                         @"Value" : @"LAHI"}];
 }
 
 @end

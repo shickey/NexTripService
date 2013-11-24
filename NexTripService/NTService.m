@@ -82,6 +82,27 @@
     }];
 }
 
+- (void)requestStopsForRoute:(NTRoute *)route direction:(NTDirection *)direction withCompletion:(void (^)(NSArray *, NSError *))completion
+{
+    NSString *endpoint = [NSString stringWithFormat:@"Stops/%ld/%ld", (long)route.routeNumber, (long)direction.direction];
+    [self.manager GET:endpoint parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        if (completion) {
+            NSArray *json = (NSArray *)responseObject;
+            NSMutableArray *stopVOs = [[NSMutableArray alloc] init];
+            for (NSDictionary *jsonStop in json) {
+                NTStop *stopVO = [NTStop valueObjectFromJSON:jsonStop];
+                [stopVOs addObject:stopVO];
+            }
+            NSArray *immutableStops = [NSArray arrayWithArray:stopVOs];
+            completion(immutableStops, nil);
+        }
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        if (completion) {
+            completion(nil, error);
+        }
+    }];
+}
+
 #pragma mark - Class Extension Methods
 
 - (NSURL *)baseURL

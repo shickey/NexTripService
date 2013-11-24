@@ -14,5 +14,6 @@
 
 - (void)requestRoutesWithCompletion:(void(^)(NSArray *routes, NSError *error))completion;
 - (void)requestDirectionsForRoute:(NTRoute *)route withCompletion:(void(^)(NSArray *directions, NSError *error))completion;
+- (void)requestStopsForRoute:(NTRoute *)route direction:(NTDirection *)direction withCompletion:(void(^)(NSArray *stops, NSError *error))completion;
 
 @end
