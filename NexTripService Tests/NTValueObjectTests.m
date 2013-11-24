@@ -60,7 +60,7 @@
     XCTAssertEqual(timeDict[@"RouteDirection"], vo.direction, @"Time direction was not set properly. Expected %@, Got %@", timeDict[@"RouteDirection"], vo.direction);
     XCTAssertEqual(timeDict[@"Description"], vo.scrollText, @"Time scroll text was not set properly. Expected %@, Got %@", timeDict[@"Description"], vo.scrollText);
     XCTAssertEqual(timeDict[@"DepartureText"], vo.departureText, @"Time departure text was not set properly. Expected %@, Got %@", timeDict[@"DepartureText"], vo.departureText);
-    XCTAssertEqual([NSDate dateWithJSONDate:timeDict[@"DepartureTime"]], vo.departureTime, @"Time departure time was not set properly. Expected %@, Got %@", [NSDate dateWithJSONDate:timeDict[@"DepartureTime"]], vo.departureTime);
+    XCTAssert([vo.departureTime isEqualToDate:[NSDate dateWithJSONDate:timeDict[@"DepartureTime"]]], @"Time departure time was not set properly. Expected %@, Got %@", [NSDate dateWithJSONDate:timeDict[@"DepartureTime"]], vo.departureTime);
     XCTAssertEqual(timeDict[@"Gate"], vo.gate, @"Time gate was not set properly. Expected %@, Got %@", timeDict[@"Gate"], vo.gate);
     XCTAssertEqual(timeDict[@"BlockNumber"], vo.block, @"Time block was not set properly. Expected %@, Got %@", timeDict[@"BlockNumber"], vo.block);
     XCTAssertEqual(timeDict[@"VehicleHeading"], vo.heading, @"Time heading was not set properly. Expected %@, Got %@", timeDict[@"VehicleHeading"], vo.heading);
