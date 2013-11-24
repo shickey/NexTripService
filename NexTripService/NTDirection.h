@@ -7,13 +7,7 @@
 //
 
 #import "NTValueObject.h"
-
-typedef enum NTDirectionValue : NSUInteger {
-    NTDirectionSouthbound   = 1,
-    NTDirectionEastbound    = 2,
-    NTDirectionWestbound    = 3,
-    NTDirectionNorthbound   = 4
-} NTDirectionValue;
+#import "NTConstants.h"
 
 @interface NTDirection : NTValueObject
 

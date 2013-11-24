@@ -7,13 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@class NTRoute, NTDirection;
+#import "NTConstants.h"
 
 @interface NTService : NSObject
 
 - (void)requestRoutesWithCompletion:(void(^)(NSArray *routes, NSError *error))completion;
-- (void)requestDirectionsForRoute:(NTRoute *)route withCompletion:(void(^)(NSArray *directions, NSError *error))completion;
-- (void)requestStopsForRoute:(NTRoute *)route direction:(NTDirection *)direction withCompletion:(void(^)(NSArray *stops, NSError *error))completion;
+- (void)requestDirectionsForRoute:(NSInteger)routeNumber withCompletion:(void(^)(NSArray *directions, NSError *error))completion;
+- (void)requestStopsForRoute:(NSInteger)routeNumber direction:(NTDirectionValue)direction withCompletion:(void(^)(NSArray *stops, NSError *error))completion;
 
 @end

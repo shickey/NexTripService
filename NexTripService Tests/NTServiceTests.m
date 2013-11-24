@@ -55,7 +55,7 @@
     __block TRVSMonitor *monitor = [TRVSMonitor monitor];
     __block NSArray *returnedDirections = nil;
     NTService *service = [[NTService alloc] init];
-    [service requestDirectionsForRoute:[self validRoute] withCompletion:^(NSArray *directions, NSError *error) {
+    [service requestDirectionsForRoute:[self validRoute].routeNumber withCompletion:^(NSArray *directions, NSError *error) {
         returnedDirections = directions;
         [monitor signal];
     }];
@@ -70,7 +70,7 @@
     __block TRVSMonitor *monitor = [TRVSMonitor monitor];
     __block NSArray *returnedStops = nil;
     NTService *service = [[NTService alloc] init];
-    [service requestStopsForRoute:[self validRoute] direction:[self validDirection] withCompletion:^(NSArray *stops, NSError *error) {
+    [service requestStopsForRoute:[self validRoute].routeNumber direction:[self validDirection].direction withCompletion:^(NSArray *stops, NSError *error) {
         returnedStops = stops;
         [monitor signal];
     }];

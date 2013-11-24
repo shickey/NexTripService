@@ -61,9 +61,9 @@
     }];
 }
 
-- (void)requestDirectionsForRoute:(NTRoute *)route withCompletion:(void(^)(NSArray *directions, NSError *error))completion
+- (void)requestDirectionsForRoute:(NSInteger)routeNumber withCompletion:(void(^)(NSArray *directions, NSError *error))completion
 {
-    NSString *endpoint = [NSString stringWithFormat:@"Directions/%ld", (long)route.routeNumber];
+    NSString *endpoint = [NSString stringWithFormat:@"Directions/%ld", (long)routeNumber];
     [self.manager GET:endpoint parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         if (completion) {
             NSArray *json = (NSArray *)responseObject;
@@ -82,9 +82,9 @@
     }];
 }
 
-- (void)requestStopsForRoute:(NTRoute *)route direction:(NTDirection *)direction withCompletion:(void (^)(NSArray *, NSError *))completion
+- (void)requestStopsForRoute:(NSInteger)routeNumber direction:(NTDirectionValue)direction withCompletion:(void (^)(NSArray *, NSError *))completion
 {
-    NSString *endpoint = [NSString stringWithFormat:@"Stops/%ld/%ld", (long)route.routeNumber, (long)direction.direction];
+    NSString *endpoint = [NSString stringWithFormat:@"Stops/%ld/%ld", (long)routeNumber, (long)direction];
     [self.manager GET:endpoint parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         if (completion) {
             NSArray *json = (NSArray *)responseObject;
