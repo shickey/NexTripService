@@ -18,6 +18,7 @@
 - (NTRoute *)validRoute;
 - (NTDirection *)validDirection;
 - (NTStop *)validStop;
+- (NSInteger)validStopNumber;
 
 @end
 
@@ -80,6 +81,39 @@
     XCTAssertNotNil(returnedStops);
 }
 
+- (void)testDepatureFetchingFromRouteDirectionStop
+{
+    __block TRVSMonitor *monitor = [TRVSMonitor monitor];
+    __block NSArray *returnedDepartures = nil;
+    NTService *service = [[NTService alloc] init];
+    [service requestDeparturesForRoute:[self validRoute].routeNumber
+                             direction:[self validDirection].direction
+                                  stop:[self validStop].identifier
+                        withCompletion:^(NSArray *departures, NSError *error) {
+                            returnedDepartures = departures;
+                            [monitor signal];
+                        }];
+    
+    [monitor waitWithTimeout:5];
+    XCTAssertNotNil(returnedDepartures);
+}
+
+- (void)testDepartureFetchingFromStopNumber
+{
+    __block TRVSMonitor *monitor = [TRVSMonitor monitor];
+    __block NSArray *returnedDepartures = nil;
+    NTService *service = [[NTService alloc] init];
+    [service requestDeparturesForStopNumber:[self validStopNumber]
+                        withCompletion:^(NSArray *departures, NSError *error) {
+                            returnedDepartures = departures;
+                            [monitor signal];
+                        }];
+    
+    [monitor waitWithTimeout:5];
+    XCTAssertNotNil(returnedDepartures);
+
+}
+
 #pragma mark - Helper Methods
 
 - (NTRoute *)validRoute
@@ -99,6 +133,11 @@
 {
     return [NTStop valueObjectFromJSON:@{@"Text"  : @"Lake St/Midtown Station (Hiawatha Ave)",
                                          @"Value" : @"LAHI"}];
+}
+
+- (NSInteger)validStopNumber
+{
+    return 16868;
 }
 
 @end

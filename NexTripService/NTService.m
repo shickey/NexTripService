@@ -61,7 +61,8 @@
     }];
 }
 
-- (void)requestDirectionsForRoute:(NSInteger)routeNumber withCompletion:(void(^)(NSArray *directions, NSError *error))completion
+- (void)requestDirectionsForRoute:(NSInteger)routeNumber
+                   withCompletion:(void(^)(NSArray *directions, NSError *error))completion
 {
     NSString *endpoint = [NSString stringWithFormat:@"Directions/%ld", (long)routeNumber];
     [self.manager GET:endpoint parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
@@ -82,7 +83,9 @@
     }];
 }
 
-- (void)requestStopsForRoute:(NSInteger)routeNumber direction:(NTDirectionValue)direction withCompletion:(void (^)(NSArray *, NSError *))completion
+- (void)requestStopsForRoute:(NSInteger)routeNumber
+                   direction:(NTDirectionValue)direction
+              withCompletion:(void (^)(NSArray *, NSError *))completion
 {
     NSString *endpoint = [NSString stringWithFormat:@"Stops/%ld/%ld", (long)routeNumber, (long)direction];
     [self.manager GET:endpoint parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
@@ -95,6 +98,53 @@
             }
             NSArray *immutableStops = [NSArray arrayWithArray:stopVOs];
             completion(immutableStops, nil);
+        }
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        if (completion) {
+            completion(nil, error);
+        }
+    }];
+}
+
+- (void)requestDeparturesForRoute:(NSInteger)routeNumber
+                        direction:(NTDirectionValue)direction
+                             stop:(NSString *)stopIdentifier
+                   withCompletion:(void (^)(NSArray *, NSError *))completion
+{
+    NSString *endpoint = [NSString stringWithFormat:@"%ld/%ld/%@", (long)routeNumber, (long)direction, stopIdentifier];
+    [self.manager GET:endpoint parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        if (completion) {
+            NSArray *json = (NSArray *)responseObject;
+            NSMutableArray *departureVOs = [[NSMutableArray alloc] init];
+            for (NSDictionary *jsonDeparture in json) {
+                NTDeparture *departure = [NTDeparture valueObjectFromJSON:jsonDeparture];
+                [departureVOs addObject:departure];
+            }
+            NSArray *immutableDepartures = [NSArray arrayWithArray:departureVOs];
+            completion(immutableDepartures, nil);
+        }
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        if (completion) {
+            completion(nil, error);
+        }
+    }];
+    
+}
+
+- (void)requestDeparturesForStopNumber:(NSInteger)stopNumber
+                        withCompletion:(void (^)(NSArray *, NSError *))completion
+{
+    NSString *endpoint = [NSString stringWithFormat:@"%ld", (long)stopNumber];
+    [self.manager GET:endpoint parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        if (completion) {
+            NSArray *json = (NSArray *)responseObject;
+            NSMutableArray *departureVOs = [[NSMutableArray alloc] init];
+            for (NSDictionary *jsonDeparture in json) {
+                NTDeparture *departure = [NTDeparture valueObjectFromJSON:jsonDeparture];
+                [departureVOs addObject:departure];
+            }
+            NSArray *immutableDepartures = [NSArray arrayWithArray:departureVOs];
+            completion(immutableDepartures, nil);
         }
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         if (completion) {
