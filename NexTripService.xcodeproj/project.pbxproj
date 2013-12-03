@@ -7,22 +7,94 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A37676E61841BC31004387F9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A37676E51841BC31004387F9 /* XCTest.framework */; };
+		A31DA30918425E410011D294 /* NSDate+NexTripServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA30618425E410011D294 /* NSDate+NexTripServiceTests.m */; };
+		A31DA30A18425E410011D294 /* NTServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA30718425E410011D294 /* NTServiceTests.m */; };
+		A31DA30B18425E410011D294 /* NTValueObjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA30818425E410011D294 /* NTValueObjectTests.m */; };
+		A31DA31218425E550011D294 /* NTDeparture.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA30D18425E550011D294 /* NTDeparture.m */; };
+		A31DA31318425E550011D294 /* NTRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA30F18425E550011D294 /* NTRoute.m */; };
+		A31DA31418425E550011D294 /* NTStop.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA31118425E550011D294 /* NTStop.m */; };
+		A31DA31A18425E750011D294 /* NTService.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA31918425E750011D294 /* NTService.m */; };
+		A31DA31D18425E7D0011D294 /* NSDate+NexTripService.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA31C18425E7D0011D294 /* NSDate+NexTripService.m */; };
+		A31DA33318425E8A0011D294 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA32118425E8A0011D294 /* AFHTTPRequestOperation.m */; };
+		A31DA33418425E8A0011D294 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA32318425E8A0011D294 /* AFHTTPRequestOperationManager.m */; };
+		A31DA33518425E8A0011D294 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA32518425E8A0011D294 /* AFHTTPSessionManager.m */; };
+		A31DA33618425E8A0011D294 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA32818425E8A0011D294 /* AFNetworkReachabilityManager.m */; };
+		A31DA33718425E8A0011D294 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA32A18425E8A0011D294 /* AFSecurityPolicy.m */; };
+		A31DA33818425E8A0011D294 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA32C18425E8A0011D294 /* AFURLConnectionOperation.m */; };
+		A31DA33918425E8A0011D294 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA32E18425E8A0011D294 /* AFURLRequestSerialization.m */; };
+		A31DA33A18425E8A0011D294 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA33018425E8A0011D294 /* AFURLResponseSerialization.m */; };
+		A31DA33B18425E8A0011D294 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA33218425E8A0011D294 /* AFURLSessionManager.m */; };
+		A31DA33D18425F8B0011D294 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A31DA33C18425F8B0011D294 /* XCTest.framework */; };
+		A31DA33E184260350011D294 /* NTValueObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A37676DC1841BC01004387F9 /* NTValueObject.m */; };
+		A31DA340184260560011D294 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A31DA33F184260560011D294 /* Foundation.framework */; };
+		A31DA3421842605E0011D294 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A31DA3411842605E0011D294 /* UIKit.framework */; };
+		A31DA344184260640011D294 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A31DA343184260640011D294 /* CoreGraphics.framework */; };
+		A31DA346184260820011D294 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A31DA345184260820011D294 /* SystemConfiguration.framework */; };
+		A31DA348184260910011D294 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A31DA347184260910011D294 /* Security.framework */; };
+		A31DA34B184260A80011D294 /* NTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA34A184260A80011D294 /* NTConstants.m */; };
+		A31DA350184264050011D294 /* TRVSMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA34F184264050011D294 /* TRVSMonitor.m */; };
+		A31DA35318426CAA0011D294 /* NTDirection.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA35218426CAA0011D294 /* NTDirection.m */; };
+		A31DA3551842722B0011D294 /* NTDirectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA3541842722B0011D294 /* NTDirectionTests.m */; };
+		A31DA3581842C9470011D294 /* NTTransitDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA3571842C9470011D294 /* NTTransitDataService.m */; };
+		A31DA35A1842CBDD0011D294 /* NTTransitDataServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA3591842CBDD0011D294 /* NTTransitDataServiceTests.m */; };
 		A37676EC1841BC31004387F9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A37676EA1841BC31004387F9 /* InfoPlist.strings */; };
-		A37676EE1841BC31004387F9 /* NexTripService_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A37676ED1841BC31004387F9 /* NexTripService_Tests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A31DA30618425E410011D294 /* NSDate+NexTripServiceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+NexTripServiceTests.m"; sourceTree = "<group>"; };
+		A31DA30718425E410011D294 /* NTServiceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTServiceTests.m; sourceTree = "<group>"; };
+		A31DA30818425E410011D294 /* NTValueObjectTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTValueObjectTests.m; sourceTree = "<group>"; };
+		A31DA30C18425E550011D294 /* NTDeparture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTDeparture.h; sourceTree = "<group>"; };
+		A31DA30D18425E550011D294 /* NTDeparture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTDeparture.m; sourceTree = "<group>"; };
+		A31DA30E18425E550011D294 /* NTRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTRoute.h; sourceTree = "<group>"; };
+		A31DA30F18425E550011D294 /* NTRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTRoute.m; sourceTree = "<group>"; };
+		A31DA31018425E550011D294 /* NTStop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTStop.h; sourceTree = "<group>"; };
+		A31DA31118425E550011D294 /* NTStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTStop.m; sourceTree = "<group>"; };
+		A31DA31818425E750011D294 /* NTService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTService.h; sourceTree = "<group>"; };
+		A31DA31918425E750011D294 /* NTService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTService.m; sourceTree = "<group>"; };
+		A31DA31B18425E7D0011D294 /* NSDate+NexTripService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+NexTripService.h"; sourceTree = "<group>"; };
+		A31DA31C18425E7D0011D294 /* NSDate+NexTripService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+NexTripService.m"; sourceTree = "<group>"; };
+		A31DA32018425E8A0011D294 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		A31DA32118425E8A0011D294 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		A31DA32218425E8A0011D294 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		A31DA32318425E8A0011D294 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		A31DA32418425E8A0011D294 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		A31DA32518425E8A0011D294 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		A31DA32618425E8A0011D294 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		A31DA32718425E8A0011D294 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		A31DA32818425E8A0011D294 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		A31DA32918425E8A0011D294 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		A31DA32A18425E8A0011D294 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		A31DA32B18425E8A0011D294 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		A31DA32C18425E8A0011D294 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		A31DA32D18425E8A0011D294 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		A31DA32E18425E8A0011D294 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		A31DA32F18425E8A0011D294 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		A31DA33018425E8A0011D294 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		A31DA33118425E8A0011D294 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		A31DA33218425E8A0011D294 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		A31DA33C18425F8B0011D294 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A31DA33F184260560011D294 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		A31DA3411842605E0011D294 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		A31DA343184260640011D294 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		A31DA345184260820011D294 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		A31DA347184260910011D294 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		A31DA349184260A80011D294 /* NTConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTConstants.h; sourceTree = "<group>"; };
+		A31DA34A184260A80011D294 /* NTConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTConstants.m; sourceTree = "<group>"; };
+		A31DA34E184264050011D294 /* TRVSMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVSMonitor.h; sourceTree = "<group>"; };
+		A31DA34F184264050011D294 /* TRVSMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSMonitor.m; sourceTree = "<group>"; };
+		A31DA35118426CAA0011D294 /* NTDirection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTDirection.h; sourceTree = "<group>"; };
+		A31DA35218426CAA0011D294 /* NTDirection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTDirection.m; sourceTree = "<group>"; };
+		A31DA3541842722B0011D294 /* NTDirectionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTDirectionTests.m; sourceTree = "<group>"; };
+		A31DA3561842C9470011D294 /* NTTransitDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTTransitDataService.h; sourceTree = "<group>"; };
+		A31DA3571842C9470011D294 /* NTTransitDataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTTransitDataService.m; sourceTree = "<group>"; };
+		A31DA3591842CBDD0011D294 /* NTTransitDataServiceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTTransitDataServiceTests.m; sourceTree = "<group>"; };
 		A37676D81841BC01004387F9 /* NexTripService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NexTripService.h; sourceTree = "<group>"; };
-		A37676D91841BC01004387F9 /* NTRouteVO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTRouteVO.h; sourceTree = "<group>"; };
-		A37676DA1841BC01004387F9 /* NTRouteVO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTRouteVO.m; sourceTree = "<group>"; };
 		A37676DB1841BC01004387F9 /* NTValueObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTValueObject.h; sourceTree = "<group>"; };
 		A37676DC1841BC01004387F9 /* NTValueObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTValueObject.m; sourceTree = "<group>"; };
 		A37676E21841BC31004387F9 /* NexTripService Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NexTripService Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A37676E51841BC31004387F9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		A37676E91841BC31004387F9 /* NexTripService Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NexTripService Tests-Info.plist"; sourceTree = "<group>"; };
 		A37676EB1841BC31004387F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A37676ED1841BC31004387F9 /* NexTripService_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NexTripService_Tests.m; sourceTree = "<group>"; };
 		A37676EF1841BC31004387F9 /* NexTripService Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NexTripService Tests-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -31,13 +103,89 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A37676E61841BC31004387F9 /* XCTest.framework in Frameworks */,
+				A31DA348184260910011D294 /* Security.framework in Frameworks */,
+				A31DA346184260820011D294 /* SystemConfiguration.framework in Frameworks */,
+				A31DA344184260640011D294 /* CoreGraphics.framework in Frameworks */,
+				A31DA3421842605E0011D294 /* UIKit.framework in Frameworks */,
+				A31DA340184260560011D294 /* Foundation.framework in Frameworks */,
+				A31DA33D18425F8B0011D294 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A31DA31518425E5D0011D294 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				A31DA31B18425E7D0011D294 /* NSDate+NexTripService.h */,
+				A31DA31C18425E7D0011D294 /* NSDate+NexTripService.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		A31DA31618425E610011D294 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A31DA31818425E750011D294 /* NTService.h */,
+				A31DA31918425E750011D294 /* NTService.m */,
+				A31DA3561842C9470011D294 /* NTTransitDataService.h */,
+				A31DA3571842C9470011D294 /* NTTransitDataService.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A31DA31E18425E7E0011D294 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				A31DA31F18425E8A0011D294 /* AFNetworking */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		A31DA31F18425E8A0011D294 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				A31DA32018425E8A0011D294 /* AFHTTPRequestOperation.h */,
+				A31DA32118425E8A0011D294 /* AFHTTPRequestOperation.m */,
+				A31DA32218425E8A0011D294 /* AFHTTPRequestOperationManager.h */,
+				A31DA32318425E8A0011D294 /* AFHTTPRequestOperationManager.m */,
+				A31DA32418425E8A0011D294 /* AFHTTPSessionManager.h */,
+				A31DA32518425E8A0011D294 /* AFHTTPSessionManager.m */,
+				A31DA32618425E8A0011D294 /* AFNetworking.h */,
+				A31DA32718425E8A0011D294 /* AFNetworkReachabilityManager.h */,
+				A31DA32818425E8A0011D294 /* AFNetworkReachabilityManager.m */,
+				A31DA32918425E8A0011D294 /* AFSecurityPolicy.h */,
+				A31DA32A18425E8A0011D294 /* AFSecurityPolicy.m */,
+				A31DA32B18425E8A0011D294 /* AFURLConnectionOperation.h */,
+				A31DA32C18425E8A0011D294 /* AFURLConnectionOperation.m */,
+				A31DA32D18425E8A0011D294 /* AFURLRequestSerialization.h */,
+				A31DA32E18425E8A0011D294 /* AFURLRequestSerialization.m */,
+				A31DA32F18425E8A0011D294 /* AFURLResponseSerialization.h */,
+				A31DA33018425E8A0011D294 /* AFURLResponseSerialization.m */,
+				A31DA33118425E8A0011D294 /* AFURLSessionManager.h */,
+				A31DA33218425E8A0011D294 /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		A31DA34C184263D60011D294 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				A31DA34D184264050011D294 /* TRVSMonitor */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		A31DA34D184264050011D294 /* TRVSMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				A31DA34E184264050011D294 /* TRVSMonitor.h */,
+				A31DA34F184264050011D294 /* TRVSMonitor.m */,
+			);
+			path = TRVSMonitor;
+			sourceTree = "<group>";
+		};
 		A37676CF1841BBE6004387F9 = {
 			isa = PBXGroup;
 			children = (
@@ -52,7 +200,12 @@
 			isa = PBXGroup;
 			children = (
 				A37676D81841BC01004387F9 /* NexTripService.h */,
+				A31DA31518425E5D0011D294 /* Categories */,
+				A31DA31618425E610011D294 /* Controllers */,
 				A37676DD1841BC0B004387F9 /* Value Objects */,
+				A31DA349184260A80011D294 /* NTConstants.h */,
+				A31DA34A184260A80011D294 /* NTConstants.m */,
+				A31DA31E18425E7E0011D294 /* Libraries */,
 			);
 			path = NexTripService;
 			sourceTree = "<group>";
@@ -62,8 +215,14 @@
 			children = (
 				A37676DB1841BC01004387F9 /* NTValueObject.h */,
 				A37676DC1841BC01004387F9 /* NTValueObject.m */,
-				A37676D91841BC01004387F9 /* NTRouteVO.h */,
-				A37676DA1841BC01004387F9 /* NTRouteVO.m */,
+				A31DA30E18425E550011D294 /* NTRoute.h */,
+				A31DA30F18425E550011D294 /* NTRoute.m */,
+				A31DA31018425E550011D294 /* NTStop.h */,
+				A31DA31118425E550011D294 /* NTStop.m */,
+				A31DA30C18425E550011D294 /* NTDeparture.h */,
+				A31DA30D18425E550011D294 /* NTDeparture.m */,
+				A31DA35118426CAA0011D294 /* NTDirection.h */,
+				A31DA35218426CAA0011D294 /* NTDirection.m */,
 			);
 			name = "Value Objects";
 			sourceTree = "<group>";
@@ -79,7 +238,12 @@
 		A37676E41841BC31004387F9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A37676E51841BC31004387F9 /* XCTest.framework */,
+				A31DA347184260910011D294 /* Security.framework */,
+				A31DA345184260820011D294 /* SystemConfiguration.framework */,
+				A31DA343184260640011D294 /* CoreGraphics.framework */,
+				A31DA3411842605E0011D294 /* UIKit.framework */,
+				A31DA33F184260560011D294 /* Foundation.framework */,
+				A31DA33C18425F8B0011D294 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -87,7 +251,12 @@
 		A37676E71841BC31004387F9 /* NexTripService Tests */ = {
 			isa = PBXGroup;
 			children = (
-				A37676ED1841BC31004387F9 /* NexTripService_Tests.m */,
+				A31DA30618425E410011D294 /* NSDate+NexTripServiceTests.m */,
+				A31DA30718425E410011D294 /* NTServiceTests.m */,
+				A31DA30818425E410011D294 /* NTValueObjectTests.m */,
+				A31DA3541842722B0011D294 /* NTDirectionTests.m */,
+				A31DA3591842CBDD0011D294 /* NTTransitDataServiceTests.m */,
+				A31DA34C184263D60011D294 /* Libraries */,
 				A37676E81841BC31004387F9 /* Supporting Files */,
 			);
 			path = "NexTripService Tests";
@@ -164,7 +333,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A37676EE1841BC31004387F9 /* NexTripService_Tests.m in Sources */,
+				A31DA33B18425E8A0011D294 /* AFURLSessionManager.m in Sources */,
+				A31DA3581842C9470011D294 /* NTTransitDataService.m in Sources */,
+				A31DA34B184260A80011D294 /* NTConstants.m in Sources */,
+				A31DA35A1842CBDD0011D294 /* NTTransitDataServiceTests.m in Sources */,
+				A31DA33818425E8A0011D294 /* AFURLConnectionOperation.m in Sources */,
+				A31DA33318425E8A0011D294 /* AFHTTPRequestOperation.m in Sources */,
+				A31DA30918425E410011D294 /* NSDate+NexTripServiceTests.m in Sources */,
+				A31DA33418425E8A0011D294 /* AFHTTPRequestOperationManager.m in Sources */,
+				A31DA31418425E550011D294 /* NTStop.m in Sources */,
+				A31DA3551842722B0011D294 /* NTDirectionTests.m in Sources */,
+				A31DA350184264050011D294 /* TRVSMonitor.m in Sources */,
+				A31DA31A18425E750011D294 /* NTService.m in Sources */,
+				A31DA33518425E8A0011D294 /* AFHTTPSessionManager.m in Sources */,
+				A31DA31318425E550011D294 /* NTRoute.m in Sources */,
+				A31DA30B18425E410011D294 /* NTValueObjectTests.m in Sources */,
+				A31DA33E184260350011D294 /* NTValueObject.m in Sources */,
+				A31DA31218425E550011D294 /* NTDeparture.m in Sources */,
+				A31DA35318426CAA0011D294 /* NTDirection.m in Sources */,
+				A31DA33718425E8A0011D294 /* AFSecurityPolicy.m in Sources */,
+				A31DA30A18425E410011D294 /* NTServiceTests.m in Sources */,
+				A31DA33918425E8A0011D294 /* AFURLRequestSerialization.m in Sources */,
+				A31DA33618425E8A0011D294 /* AFNetworkReachabilityManager.m in Sources */,
+				A31DA33A18425E8A0011D294 /* AFURLResponseSerialization.m in Sources */,
+				A31DA31D18425E7D0011D294 /* NSDate+NexTripService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,8 +403,9 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -235,7 +428,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -259,8 +452,9 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -275,7 +469,7 @@
 				INFOPLIST_FILE = "NexTripService Tests/NexTripService Tests-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
