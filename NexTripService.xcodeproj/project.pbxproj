@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A31263E318D4C96800CCEF44 /* NexTripService.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A37676D81841BC01004387F9 /* NexTripService.h */; };
+		A31263E418D4C96800CCEF44 /* NTService.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A31DA31818425E750011D294 /* NTService.h */; };
+		A31263E518D4C96800CCEF44 /* NTValueObject.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A37676DB1841BC01004387F9 /* NTValueObject.h */; };
+		A31263E618D4C96800CCEF44 /* NTRoute.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A31DA30E18425E550011D294 /* NTRoute.h */; };
+		A31263E718D4C96800CCEF44 /* NTStop.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A31DA31018425E550011D294 /* NTStop.h */; };
+		A31263E818D4C96800CCEF44 /* NTDeparture.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A31DA30C18425E550011D294 /* NTDeparture.h */; };
+		A31263E918D4C96800CCEF44 /* NTDirection.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A31DA35118426CAA0011D294 /* NTDirection.h */; };
+		A31263EA18D4C96800CCEF44 /* NTConstants.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A31DA349184260A80011D294 /* NTConstants.h */; };
 		A31DA30918425E410011D294 /* NSDate+NexTripServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA30618425E410011D294 /* NSDate+NexTripServiceTests.m */; };
 		A31DA30A18425E410011D294 /* NTServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA30718425E410011D294 /* NTServiceTests.m */; };
 		A31DA30B18425E410011D294 /* NTValueObjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA30818425E410011D294 /* NTValueObjectTests.m */; };
@@ -69,6 +77,14 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				A31263E318D4C96800CCEF44 /* NexTripService.h in CopyFiles */,
+				A31263E418D4C96800CCEF44 /* NTService.h in CopyFiles */,
+				A31263E518D4C96800CCEF44 /* NTValueObject.h in CopyFiles */,
+				A31263E618D4C96800CCEF44 /* NTRoute.h in CopyFiles */,
+				A31263E718D4C96800CCEF44 /* NTStop.h in CopyFiles */,
+				A31263E818D4C96800CCEF44 /* NTDeparture.h in CopyFiles */,
+				A31263E918D4C96800CCEF44 /* NTDirection.h in CopyFiles */,
+				A31263EA18D4C96800CCEF44 /* NTConstants.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -676,6 +692,7 @@
 				A39516F4184D94B300C79FB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
