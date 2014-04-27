@@ -1,19 +1,19 @@
 //
-//  NTValueObject.m
+//  NTSValueObject.m
 //  NexTripService
 //
 //  Created by Sean Hickey on 11/23/13.
 //
 //
 
-#import "NTValueObject.h"
+#import "NTSValueObject.h"
 #import "NSDate+NexTripService.h"
 
-@implementation NTValueObject
+@implementation NTSValueObject
 
 + (id)valueObjectFromJSON:(NSDictionary *)json
 {
-    NTValueObject *vo = [[self alloc] init];
+    NTSValueObject *vo = [[self alloc] init];
     NSDictionary *mapping = [self jsonMapping];
     NSDictionary *valueTypes = [self jsonValueTypes];
     
@@ -22,7 +22,7 @@
             NSString *voKey = mapping[jsonKey];
             id value = json[jsonKey];
             if (valueTypes[jsonKey]) {
-                if ([valueTypes[jsonKey] integerValue] == NTJSONValueTypeDate) {
+                if ([valueTypes[jsonKey] integerValue] == NTSJSONValueTypeDate) {
                     value = [NSDate dateWithJSONDate:value];
                 }
             }

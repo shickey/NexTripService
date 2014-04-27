@@ -1,2 +1,3 @@
+*.DS_Store
 NexTripService/Libraries/*
 NexTripService Tests/Libraries/*

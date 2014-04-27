@@ -1,5 +1,5 @@
 //
-//  NTService.h
+//  NTSService.h
 //  NexTripService
 //
 //  Created by Sean Hickey on 11/24/13.
@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NTConstants.h"
+#import "NTSConstants.h"
 
-@interface NTService : NSObject
+@interface NTSService : NSObject
 
 - (void)requestRoutesWithCompletion:(void(^)(NSArray *routes, NSError *error))completion;
 
@@ -17,11 +17,11 @@
                    withCompletion:(void(^)(NSArray *directions, NSError *error))completion;
 
 - (void)requestStopsForRoute:(NSInteger)routeNumber
-                   direction:(NTDirectionValue)direction
+                   direction:(NTSDirectionValue)direction
               withCompletion:(void(^)(NSArray *stops, NSError *error))completion;
 
 - (void)requestDeparturesForRoute:(NSInteger)routeNumber
-                        direction:(NTDirectionValue)direction
+                        direction:(NTSDirectionValue)direction
                              stop:(NSString *)stopIdentifier
                    withCompletion:(void(^)(NSArray *departures, NSError *error))completion;
 

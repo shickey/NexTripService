@@ -1,5 +1,5 @@
 //
-//  NTDirectionTests.m
+//  NTSDirectionTests.m
 //  NexTripService
 //
 //  Created by Sean Hickey on 11/24/13.
@@ -7,19 +7,19 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "NTDirection.h"
+#import "NTSDirection.h"
 
-@interface NTDirectionTests : XCTestCase
+@interface NTSDirectionTests : XCTestCase
 
 - (NSDictionary *)validDirectionDictionary;
-- (NTDirection *)southVO;
-- (NTDirection *)eastVO;
-- (NTDirection *)westVO;
-- (NTDirection *)northVO;
+- (NTSDirection *)southVO;
+- (NTSDirection *)eastVO;
+- (NTSDirection *)westVO;
+- (NTSDirection *)northVO;
 
 @end
 
-@implementation NTDirectionTests
+@implementation NTSDirectionTests
 
 - (void)setUp
 {
@@ -35,15 +35,15 @@
 
 - (void)testCreatesDirectionVOWithValidDirectionDictionary
 {
-    NTDirection *vo = [NTDirection valueObjectFromJSON:[self validDirectionDictionary]];
+    NTSDirection *vo = [NTSDirection valueObjectFromJSON:[self validDirectionDictionary]];
     XCTAssert(vo.direction == NTDirectionEastbound);
 }
 
 - (void)testIsEqualMethod
 {
-    NTDirection *vo1 = [NTDirection valueObjectFromJSON:[self validDirectionDictionary]];
-    NTDirection *vo2 = [[NTDirection alloc] init];
-    vo2.direction = NTDirectionEastbound;
+    NTSDirection *vo1 = [NTSDirection valueObjectFromJSON:[self validDirectionDictionary]];
+    NTSDirection *vo2 = [[NTSDirection alloc] init];
+    vo2.direction = NTSDirectionEastbound;
     XCTAssert([vo1 isEqual:vo2]);
 }
 
@@ -87,31 +87,31 @@
              @"Value" : @"2"};
 }
 
-- (NTDirection *)southVO
+- (NTSDirection *)southVO
 {
-    NTDirection *southVO = [[NTDirection alloc] init];
-    [southVO setDirection:NTDirectionSouthbound];
+    NTSDirection *southVO = [[NTSDirection alloc] init];
+    [southVO setDirection:NTSDirectionSouthbound];
     return southVO;
 }
 
-- (NTDirection *)eastVO;
+- (NTSDirection *)eastVO;
 {
-    NTDirection *eastVO  = [[NTDirection alloc] init];
-    [eastVO setDirection:NTDirectionEastbound];
+    NTSDirection *eastVO  = [[NTSDirection alloc] init];
+    [eastVO setDirection:NTSDirectionEastbound];
     return eastVO;
 }
 
-- (NTDirection *)westVO
+- (NTSDirection *)westVO
 {
-    NTDirection *westVO  = [[NTDirection alloc] init];
-    [westVO setDirection:NTDirectionWestbound];
+    NTSDirection *westVO  = [[NTSDirection alloc] init];
+    [westVO setDirection:NTSDirectionWestbound];
     return westVO;
 }
 
-- (NTDirection *)northVO
+- (NTSDirection *)northVO
 {
-    NTDirection *northVO = [[NTDirection alloc] init];
-    [northVO setDirection:NTDirectionNorthbound];
+    NTSDirection *northVO = [[NTSDirection alloc] init];
+    [northVO setDirection:NTSDirectionNorthbound];
     return northVO;
 }
 

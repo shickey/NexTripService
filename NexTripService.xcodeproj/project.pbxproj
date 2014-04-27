@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		A31263E318D4C96800CCEF44 /* NexTripService.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A37676D81841BC01004387F9 /* NexTripService.h */; };
-		A31263E418D4C96800CCEF44 /* NTService.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A31DA31818425E750011D294 /* NTService.h */; };
-		A31263E518D4C96800CCEF44 /* NTValueObject.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A37676DB1841BC01004387F9 /* NTValueObject.h */; };
-		A31263E618D4C96800CCEF44 /* NTRoute.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A31DA30E18425E550011D294 /* NTRoute.h */; };
-		A31263E718D4C96800CCEF44 /* NTStop.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A31DA31018425E550011D294 /* NTStop.h */; };
-		A31263E818D4C96800CCEF44 /* NTDeparture.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A31DA30C18425E550011D294 /* NTDeparture.h */; };
-		A31263E918D4C96800CCEF44 /* NTDirection.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A31DA35118426CAA0011D294 /* NTDirection.h */; };
-		A31263EA18D4C96800CCEF44 /* NTConstants.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A31DA349184260A80011D294 /* NTConstants.h */; };
+		A31263E418D4C96800CCEF44 /* NTSService.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A31DA31818425E750011D294 /* NTSService.h */; };
+		A31263E518D4C96800CCEF44 /* NTSValueObject.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A37676DB1841BC01004387F9 /* NTSValueObject.h */; };
+		A31263E618D4C96800CCEF44 /* NTSRoute.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A31DA30E18425E550011D294 /* NTSRoute.h */; };
+		A31263E718D4C96800CCEF44 /* NTSStop.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A31DA31018425E550011D294 /* NTSStop.h */; };
+		A31263E818D4C96800CCEF44 /* NTSDeparture.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A31DA30C18425E550011D294 /* NTSDeparture.h */; };
+		A31263E918D4C96800CCEF44 /* NTSDirection.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A31DA35118426CAA0011D294 /* NTSDirection.h */; };
+		A31263EA18D4C96800CCEF44 /* NTSConstants.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A31DA349184260A80011D294 /* NTSConstants.h */; };
 		A31DA30918425E410011D294 /* NSDate+NexTripServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA30618425E410011D294 /* NSDate+NexTripServiceTests.m */; };
-		A31DA30A18425E410011D294 /* NTServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA30718425E410011D294 /* NTServiceTests.m */; };
-		A31DA30B18425E410011D294 /* NTValueObjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA30818425E410011D294 /* NTValueObjectTests.m */; };
-		A31DA31218425E550011D294 /* NTDeparture.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA30D18425E550011D294 /* NTDeparture.m */; };
-		A31DA31318425E550011D294 /* NTRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA30F18425E550011D294 /* NTRoute.m */; };
-		A31DA31418425E550011D294 /* NTStop.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA31118425E550011D294 /* NTStop.m */; };
-		A31DA31A18425E750011D294 /* NTService.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA31918425E750011D294 /* NTService.m */; };
+		A31DA30A18425E410011D294 /* NTSServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA30718425E410011D294 /* NTSServiceTests.m */; };
+		A31DA30B18425E410011D294 /* NTSValueObjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA30818425E410011D294 /* NTSValueObjectTests.m */; };
+		A31DA31218425E550011D294 /* NTSDeparture.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA30D18425E550011D294 /* NTSDeparture.m */; };
+		A31DA31318425E550011D294 /* NTSRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA30F18425E550011D294 /* NTSRoute.m */; };
+		A31DA31418425E550011D294 /* NTSStop.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA31118425E550011D294 /* NTSStop.m */; };
+		A31DA31A18425E750011D294 /* NTSService.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA31918425E750011D294 /* NTSService.m */; };
 		A31DA31D18425E7D0011D294 /* NSDate+NexTripService.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA31C18425E7D0011D294 /* NSDate+NexTripService.m */; };
 		A31DA33318425E8A0011D294 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA32118425E8A0011D294 /* AFHTTPRequestOperation.m */; };
 		A31DA33418425E8A0011D294 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA32318425E8A0011D294 /* AFHTTPRequestOperationManager.m */; };
@@ -33,16 +33,16 @@
 		A31DA33A18425E8A0011D294 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA33018425E8A0011D294 /* AFURLResponseSerialization.m */; };
 		A31DA33B18425E8A0011D294 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA33218425E8A0011D294 /* AFURLSessionManager.m */; };
 		A31DA33D18425F8B0011D294 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A31DA33C18425F8B0011D294 /* XCTest.framework */; };
-		A31DA33E184260350011D294 /* NTValueObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A37676DC1841BC01004387F9 /* NTValueObject.m */; };
+		A31DA33E184260350011D294 /* NTSValueObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A37676DC1841BC01004387F9 /* NTSValueObject.m */; };
 		A31DA340184260560011D294 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A31DA33F184260560011D294 /* Foundation.framework */; };
 		A31DA3421842605E0011D294 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A31DA3411842605E0011D294 /* UIKit.framework */; };
 		A31DA344184260640011D294 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A31DA343184260640011D294 /* CoreGraphics.framework */; };
 		A31DA346184260820011D294 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A31DA345184260820011D294 /* SystemConfiguration.framework */; };
 		A31DA348184260910011D294 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A31DA347184260910011D294 /* Security.framework */; };
-		A31DA34B184260A80011D294 /* NTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA34A184260A80011D294 /* NTConstants.m */; };
+		A31DA34B184260A80011D294 /* NTSConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA34A184260A80011D294 /* NTSConstants.m */; };
 		A31DA350184264050011D294 /* TRVSMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA34F184264050011D294 /* TRVSMonitor.m */; };
-		A31DA35318426CAA0011D294 /* NTDirection.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA35218426CAA0011D294 /* NTDirection.m */; };
-		A31DA3551842722B0011D294 /* NTDirectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA3541842722B0011D294 /* NTDirectionTests.m */; };
+		A31DA35318426CAA0011D294 /* NTSDirection.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA35218426CAA0011D294 /* NTSDirection.m */; };
+		A31DA3551842722B0011D294 /* NTSDirectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA3541842722B0011D294 /* NTSDirectionTests.m */; };
 		A31DA3581842C9470011D294 /* NTTransitDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA3571842C9470011D294 /* NTTransitDataService.m */; };
 		A31DA35A1842CBDD0011D294 /* NTTransitDataServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA3591842CBDD0011D294 /* NTTransitDataServiceTests.m */; };
 		A37676EC1841BC31004387F9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A37676EA1841BC31004387F9 /* InfoPlist.strings */; };
@@ -51,14 +51,14 @@
 		A39516FA184D954700C79FB5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A31DA345184260820011D294 /* SystemConfiguration.framework */; };
 		A39516FB184D955D00C79FB5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A31DA343184260640011D294 /* CoreGraphics.framework */; };
 		A39516FC184D958900C79FB5 /* NSDate+NexTripService.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA31C18425E7D0011D294 /* NSDate+NexTripService.m */; };
-		A39516FD184D958900C79FB5 /* NTService.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA31918425E750011D294 /* NTService.m */; };
+		A39516FD184D958900C79FB5 /* NTSService.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA31918425E750011D294 /* NTSService.m */; };
 		A39516FE184D958900C79FB5 /* NTTransitDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA3571842C9470011D294 /* NTTransitDataService.m */; };
-		A39516FF184D958900C79FB5 /* NTValueObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A37676DC1841BC01004387F9 /* NTValueObject.m */; };
-		A3951700184D958900C79FB5 /* NTRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA30F18425E550011D294 /* NTRoute.m */; };
-		A3951701184D958900C79FB5 /* NTStop.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA31118425E550011D294 /* NTStop.m */; };
-		A3951702184D958900C79FB5 /* NTDeparture.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA30D18425E550011D294 /* NTDeparture.m */; };
-		A3951703184D958900C79FB5 /* NTDirection.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA35218426CAA0011D294 /* NTDirection.m */; };
-		A3951704184D958900C79FB5 /* NTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA34A184260A80011D294 /* NTConstants.m */; };
+		A39516FF184D958900C79FB5 /* NTSValueObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A37676DC1841BC01004387F9 /* NTSValueObject.m */; };
+		A3951700184D958900C79FB5 /* NTSRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA30F18425E550011D294 /* NTSRoute.m */; };
+		A3951701184D958900C79FB5 /* NTSStop.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA31118425E550011D294 /* NTSStop.m */; };
+		A3951702184D958900C79FB5 /* NTSDeparture.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA30D18425E550011D294 /* NTSDeparture.m */; };
+		A3951703184D958900C79FB5 /* NTSDirection.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA35218426CAA0011D294 /* NTSDirection.m */; };
+		A3951704184D958900C79FB5 /* NTSConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA34A184260A80011D294 /* NTSConstants.m */; };
 		A3951705184D958900C79FB5 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA32118425E8A0011D294 /* AFHTTPRequestOperation.m */; };
 		A3951706184D958900C79FB5 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA32318425E8A0011D294 /* AFHTTPRequestOperationManager.m */; };
 		A3951707184D958900C79FB5 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA32518425E8A0011D294 /* AFHTTPSessionManager.m */; };
@@ -78,13 +78,13 @@
 			dstSubfolderSpec = 16;
 			files = (
 				A31263E318D4C96800CCEF44 /* NexTripService.h in CopyFiles */,
-				A31263E418D4C96800CCEF44 /* NTService.h in CopyFiles */,
-				A31263E518D4C96800CCEF44 /* NTValueObject.h in CopyFiles */,
-				A31263E618D4C96800CCEF44 /* NTRoute.h in CopyFiles */,
-				A31263E718D4C96800CCEF44 /* NTStop.h in CopyFiles */,
-				A31263E818D4C96800CCEF44 /* NTDeparture.h in CopyFiles */,
-				A31263E918D4C96800CCEF44 /* NTDirection.h in CopyFiles */,
-				A31263EA18D4C96800CCEF44 /* NTConstants.h in CopyFiles */,
+				A31263E418D4C96800CCEF44 /* NTSService.h in CopyFiles */,
+				A31263E518D4C96800CCEF44 /* NTSValueObject.h in CopyFiles */,
+				A31263E618D4C96800CCEF44 /* NTSRoute.h in CopyFiles */,
+				A31263E718D4C96800CCEF44 /* NTSStop.h in CopyFiles */,
+				A31263E818D4C96800CCEF44 /* NTSDeparture.h in CopyFiles */,
+				A31263E918D4C96800CCEF44 /* NTSDirection.h in CopyFiles */,
+				A31263EA18D4C96800CCEF44 /* NTSConstants.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,16 +92,16 @@
 
 /* Begin PBXFileReference section */
 		A31DA30618425E410011D294 /* NSDate+NexTripServiceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+NexTripServiceTests.m"; sourceTree = "<group>"; };
-		A31DA30718425E410011D294 /* NTServiceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTServiceTests.m; sourceTree = "<group>"; };
-		A31DA30818425E410011D294 /* NTValueObjectTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTValueObjectTests.m; sourceTree = "<group>"; };
-		A31DA30C18425E550011D294 /* NTDeparture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTDeparture.h; sourceTree = "<group>"; };
-		A31DA30D18425E550011D294 /* NTDeparture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTDeparture.m; sourceTree = "<group>"; };
-		A31DA30E18425E550011D294 /* NTRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTRoute.h; sourceTree = "<group>"; };
-		A31DA30F18425E550011D294 /* NTRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTRoute.m; sourceTree = "<group>"; };
-		A31DA31018425E550011D294 /* NTStop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTStop.h; sourceTree = "<group>"; };
-		A31DA31118425E550011D294 /* NTStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTStop.m; sourceTree = "<group>"; };
-		A31DA31818425E750011D294 /* NTService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTService.h; sourceTree = "<group>"; };
-		A31DA31918425E750011D294 /* NTService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTService.m; sourceTree = "<group>"; };
+		A31DA30718425E410011D294 /* NTSServiceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTSServiceTests.m; sourceTree = "<group>"; };
+		A31DA30818425E410011D294 /* NTSValueObjectTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTSValueObjectTests.m; sourceTree = "<group>"; };
+		A31DA30C18425E550011D294 /* NTSDeparture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTSDeparture.h; sourceTree = "<group>"; };
+		A31DA30D18425E550011D294 /* NTSDeparture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTSDeparture.m; sourceTree = "<group>"; };
+		A31DA30E18425E550011D294 /* NTSRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTSRoute.h; sourceTree = "<group>"; };
+		A31DA30F18425E550011D294 /* NTSRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTSRoute.m; sourceTree = "<group>"; };
+		A31DA31018425E550011D294 /* NTSStop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTSStop.h; sourceTree = "<group>"; };
+		A31DA31118425E550011D294 /* NTSStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTSStop.m; sourceTree = "<group>"; };
+		A31DA31818425E750011D294 /* NTSService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTSService.h; sourceTree = "<group>"; };
+		A31DA31918425E750011D294 /* NTSService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTSService.m; sourceTree = "<group>"; };
 		A31DA31B18425E7D0011D294 /* NSDate+NexTripService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+NexTripService.h"; sourceTree = "<group>"; };
 		A31DA31C18425E7D0011D294 /* NSDate+NexTripService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+NexTripService.m"; sourceTree = "<group>"; };
 		A31DA32018425E8A0011D294 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -129,19 +129,19 @@
 		A31DA343184260640011D294 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		A31DA345184260820011D294 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		A31DA347184260910011D294 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		A31DA349184260A80011D294 /* NTConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTConstants.h; sourceTree = "<group>"; };
-		A31DA34A184260A80011D294 /* NTConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTConstants.m; sourceTree = "<group>"; };
+		A31DA349184260A80011D294 /* NTSConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTSConstants.h; sourceTree = "<group>"; };
+		A31DA34A184260A80011D294 /* NTSConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTSConstants.m; sourceTree = "<group>"; };
 		A31DA34E184264050011D294 /* TRVSMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVSMonitor.h; sourceTree = "<group>"; };
 		A31DA34F184264050011D294 /* TRVSMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSMonitor.m; sourceTree = "<group>"; };
-		A31DA35118426CAA0011D294 /* NTDirection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTDirection.h; sourceTree = "<group>"; };
-		A31DA35218426CAA0011D294 /* NTDirection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTDirection.m; sourceTree = "<group>"; };
-		A31DA3541842722B0011D294 /* NTDirectionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTDirectionTests.m; sourceTree = "<group>"; };
+		A31DA35118426CAA0011D294 /* NTSDirection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTSDirection.h; sourceTree = "<group>"; };
+		A31DA35218426CAA0011D294 /* NTSDirection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTSDirection.m; sourceTree = "<group>"; };
+		A31DA3541842722B0011D294 /* NTSDirectionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTSDirectionTests.m; sourceTree = "<group>"; };
 		A31DA3561842C9470011D294 /* NTTransitDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTTransitDataService.h; sourceTree = "<group>"; };
 		A31DA3571842C9470011D294 /* NTTransitDataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTTransitDataService.m; sourceTree = "<group>"; };
 		A31DA3591842CBDD0011D294 /* NTTransitDataServiceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTTransitDataServiceTests.m; sourceTree = "<group>"; };
 		A37676D81841BC01004387F9 /* NexTripService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NexTripService.h; sourceTree = "<group>"; };
-		A37676DB1841BC01004387F9 /* NTValueObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTValueObject.h; sourceTree = "<group>"; };
-		A37676DC1841BC01004387F9 /* NTValueObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTValueObject.m; sourceTree = "<group>"; };
+		A37676DB1841BC01004387F9 /* NTSValueObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTSValueObject.h; sourceTree = "<group>"; };
+		A37676DC1841BC01004387F9 /* NTSValueObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTSValueObject.m; sourceTree = "<group>"; };
 		A37676E21841BC31004387F9 /* NexTripService Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NexTripService Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A37676E91841BC31004387F9 /* NexTripService Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NexTripService Tests-Info.plist"; sourceTree = "<group>"; };
 		A37676EB1841BC31004387F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -189,8 +189,8 @@
 		A31DA31618425E610011D294 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				A31DA31818425E750011D294 /* NTService.h */,
-				A31DA31918425E750011D294 /* NTService.m */,
+				A31DA31818425E750011D294 /* NTSService.h */,
+				A31DA31918425E750011D294 /* NTSService.m */,
 				A31DA3561842C9470011D294 /* NTTransitDataService.h */,
 				A31DA3571842C9470011D294 /* NTTransitDataService.m */,
 			);
@@ -265,8 +265,8 @@
 				A31DA31518425E5D0011D294 /* Categories */,
 				A31DA31618425E610011D294 /* Controllers */,
 				A37676DD1841BC0B004387F9 /* Value Objects */,
-				A31DA349184260A80011D294 /* NTConstants.h */,
-				A31DA34A184260A80011D294 /* NTConstants.m */,
+				A31DA349184260A80011D294 /* NTSConstants.h */,
+				A31DA34A184260A80011D294 /* NTSConstants.m */,
 				A31DA31E18425E7E0011D294 /* Libraries */,
 			);
 			path = NexTripService;
@@ -275,16 +275,16 @@
 		A37676DD1841BC0B004387F9 /* Value Objects */ = {
 			isa = PBXGroup;
 			children = (
-				A37676DB1841BC01004387F9 /* NTValueObject.h */,
-				A37676DC1841BC01004387F9 /* NTValueObject.m */,
-				A31DA30E18425E550011D294 /* NTRoute.h */,
-				A31DA30F18425E550011D294 /* NTRoute.m */,
-				A31DA31018425E550011D294 /* NTStop.h */,
-				A31DA31118425E550011D294 /* NTStop.m */,
-				A31DA30C18425E550011D294 /* NTDeparture.h */,
-				A31DA30D18425E550011D294 /* NTDeparture.m */,
-				A31DA35118426CAA0011D294 /* NTDirection.h */,
-				A31DA35218426CAA0011D294 /* NTDirection.m */,
+				A37676DB1841BC01004387F9 /* NTSValueObject.h */,
+				A37676DC1841BC01004387F9 /* NTSValueObject.m */,
+				A31DA30E18425E550011D294 /* NTSRoute.h */,
+				A31DA30F18425E550011D294 /* NTSRoute.m */,
+				A31DA31018425E550011D294 /* NTSStop.h */,
+				A31DA31118425E550011D294 /* NTSStop.m */,
+				A31DA30C18425E550011D294 /* NTSDeparture.h */,
+				A31DA30D18425E550011D294 /* NTSDeparture.m */,
+				A31DA35118426CAA0011D294 /* NTSDirection.h */,
+				A31DA35218426CAA0011D294 /* NTSDirection.m */,
 			);
 			name = "Value Objects";
 			sourceTree = "<group>";
@@ -315,9 +315,9 @@
 			isa = PBXGroup;
 			children = (
 				A31DA30618425E410011D294 /* NSDate+NexTripServiceTests.m */,
-				A31DA30718425E410011D294 /* NTServiceTests.m */,
-				A31DA30818425E410011D294 /* NTValueObjectTests.m */,
-				A31DA3541842722B0011D294 /* NTDirectionTests.m */,
+				A31DA30718425E410011D294 /* NTSServiceTests.m */,
+				A31DA30818425E410011D294 /* NTSValueObjectTests.m */,
+				A31DA3541842722B0011D294 /* NTSDirectionTests.m */,
 				A31DA3591842CBDD0011D294 /* NTTransitDataServiceTests.m */,
 				A31DA34C184263D60011D294 /* Libraries */,
 				A37676E81841BC31004387F9 /* Supporting Files */,
@@ -378,7 +378,8 @@
 		A37676D01841BBE6004387F9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				CLASSPREFIX = NTS;
+				LastUpgradeCheck = 0510;
 			};
 			buildConfigurationList = A37676D31841BBE6004387F9 /* Build configuration list for PBXProject "NexTripService" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -416,24 +417,24 @@
 			files = (
 				A31DA33B18425E8A0011D294 /* AFURLSessionManager.m in Sources */,
 				A31DA3581842C9470011D294 /* NTTransitDataService.m in Sources */,
-				A31DA34B184260A80011D294 /* NTConstants.m in Sources */,
+				A31DA34B184260A80011D294 /* NTSConstants.m in Sources */,
 				A31DA35A1842CBDD0011D294 /* NTTransitDataServiceTests.m in Sources */,
 				A31DA33818425E8A0011D294 /* AFURLConnectionOperation.m in Sources */,
 				A31DA33318425E8A0011D294 /* AFHTTPRequestOperation.m in Sources */,
 				A31DA30918425E410011D294 /* NSDate+NexTripServiceTests.m in Sources */,
 				A31DA33418425E8A0011D294 /* AFHTTPRequestOperationManager.m in Sources */,
-				A31DA31418425E550011D294 /* NTStop.m in Sources */,
-				A31DA3551842722B0011D294 /* NTDirectionTests.m in Sources */,
+				A31DA31418425E550011D294 /* NTSStop.m in Sources */,
+				A31DA3551842722B0011D294 /* NTSDirectionTests.m in Sources */,
 				A31DA350184264050011D294 /* TRVSMonitor.m in Sources */,
-				A31DA31A18425E750011D294 /* NTService.m in Sources */,
+				A31DA31A18425E750011D294 /* NTSService.m in Sources */,
 				A31DA33518425E8A0011D294 /* AFHTTPSessionManager.m in Sources */,
-				A31DA31318425E550011D294 /* NTRoute.m in Sources */,
-				A31DA30B18425E410011D294 /* NTValueObjectTests.m in Sources */,
-				A31DA33E184260350011D294 /* NTValueObject.m in Sources */,
-				A31DA31218425E550011D294 /* NTDeparture.m in Sources */,
-				A31DA35318426CAA0011D294 /* NTDirection.m in Sources */,
+				A31DA31318425E550011D294 /* NTSRoute.m in Sources */,
+				A31DA30B18425E410011D294 /* NTSValueObjectTests.m in Sources */,
+				A31DA33E184260350011D294 /* NTSValueObject.m in Sources */,
+				A31DA31218425E550011D294 /* NTSDeparture.m in Sources */,
+				A31DA35318426CAA0011D294 /* NTSDirection.m in Sources */,
 				A31DA33718425E8A0011D294 /* AFSecurityPolicy.m in Sources */,
-				A31DA30A18425E410011D294 /* NTServiceTests.m in Sources */,
+				A31DA30A18425E410011D294 /* NTSServiceTests.m in Sources */,
 				A31DA33918425E8A0011D294 /* AFURLRequestSerialization.m in Sources */,
 				A31DA33618425E8A0011D294 /* AFNetworkReachabilityManager.m in Sources */,
 				A31DA33A18425E8A0011D294 /* AFURLResponseSerialization.m in Sources */,
@@ -446,14 +447,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A39516FC184D958900C79FB5 /* NSDate+NexTripService.m in Sources */,
-				A39516FD184D958900C79FB5 /* NTService.m in Sources */,
+				A39516FD184D958900C79FB5 /* NTSService.m in Sources */,
 				A39516FE184D958900C79FB5 /* NTTransitDataService.m in Sources */,
-				A39516FF184D958900C79FB5 /* NTValueObject.m in Sources */,
-				A3951700184D958900C79FB5 /* NTRoute.m in Sources */,
-				A3951701184D958900C79FB5 /* NTStop.m in Sources */,
-				A3951702184D958900C79FB5 /* NTDeparture.m in Sources */,
-				A3951703184D958900C79FB5 /* NTDirection.m in Sources */,
-				A3951704184D958900C79FB5 /* NTConstants.m in Sources */,
+				A39516FF184D958900C79FB5 /* NTSValueObject.m in Sources */,
+				A3951700184D958900C79FB5 /* NTSRoute.m in Sources */,
+				A3951701184D958900C79FB5 /* NTSStop.m in Sources */,
+				A3951702184D958900C79FB5 /* NTSDeparture.m in Sources */,
+				A3951703184D958900C79FB5 /* NTSDirection.m in Sources */,
+				A3951704184D958900C79FB5 /* NTSConstants.m in Sources */,
 				A3951705184D958900C79FB5 /* AFHTTPRequestOperation.m in Sources */,
 				A3951706184D958900C79FB5 /* AFHTTPRequestOperationManager.m in Sources */,
 				A3951707184D958900C79FB5 /* AFHTTPSessionManager.m in Sources */,
@@ -483,6 +484,7 @@
 		A37676D41841BBE6004387F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
 		};
@@ -584,7 +586,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -629,7 +630,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;

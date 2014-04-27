@@ -1,14 +1,14 @@
 //
-//  NTTimeVO.m
+//  NTSDeparture.m
 //  NexTripService
 //
 //  Created by Sean Hickey on 11/23/13.
 //
 //
 
-#import "NTDeparture.h"
+#import "NTSDeparture.h"
 
-@implementation NTDeparture
+@implementation NTSDeparture
 
 + (NSDictionary *)jsonMapping
 {
@@ -28,7 +28,7 @@
 
 + (NSDictionary *)jsonValueTypes
 {
-    return @{@"DepartureTime": @(NTJSONValueTypeDate)};
+    return @{@"DepartureTime": @(NTSJSONValueTypeDate)};
 }
 
 @end

@@ -1,14 +1,14 @@
 //
-//  NTRouteVO.h
+//  NTSRoute.h
 //  NexTripService
 //
 //  Created by Sean Hickey on 11/23/13.
 //
 //
 
-#import "NTValueObject.h"
+#import "NTSValueObject.h"
 
-@interface NTRoute : NTValueObject
+@interface NTSRoute : NTSValueObject
 
 @property (copy, nonatomic)   NSString *routeDescription;
 @property (assign, nonatomic) NSInteger providerId;

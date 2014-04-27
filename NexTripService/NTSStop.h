@@ -1,14 +1,14 @@
 //
-//  NTStopVO.h
+//  NTSStop.h
 //  NexTripService
 //
 //  Created by Sean Hickey on 11/23/13.
 //
 //
 
-#import "NTValueObject.h"
+#import "NTSValueObject.h"
 
-@interface NTStop : NTValueObject
+@interface NTSStop : NTSValueObject
 
 @property (copy, nonatomic) NSString *name;
 @property (copy, nonatomic) NSString *identifier;

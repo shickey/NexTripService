@@ -1,17 +1,17 @@
 //
-//  NTDirection.h
+//  NTSDirection.h
 //  NexTripService
 //
 //  Created by Sean Hickey on 11/24/13.
 //
 //
 
-#import "NTValueObject.h"
-#import "NTConstants.h"
+#import "NTSValueObject.h"
+#import "NTSConstants.h"
 
-@interface NTDirection : NTValueObject
+@interface NTSDirection : NTSValueObject
 
-@property (assign, nonatomic) NTDirectionValue direction;
+@property (assign, nonatomic) NTSDirectionValue direction;
 
 - (NSString *)metroTransitString;
 - (NSString *)capitalizedString;

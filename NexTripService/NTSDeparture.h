@@ -1,14 +1,14 @@
 //
-//  NTTimeVO.h
+//  NTSDeparture.h
 //  NexTripService
 //
 //  Created by Sean Hickey on 11/23/13.
 //
 //
 
-#import "NTValueObject.h"
+#import "NTSValueObject.h"
 
-@interface NTDeparture : NTValueObject
+@interface NTSDeparture : NTSValueObject
 
 @property (copy, nonatomic) NSNumber *actual;
 @property (copy, nonatomic) NSNumber *longitude;

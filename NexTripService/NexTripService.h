@@ -11,10 +11,10 @@
 #ifndef _NEXTRIPSERVICE_
 #define _NEXTRIPESRVICE_
 
-    #import "NTService.h"
-    #import "NTRoute.h"
-    #import "NTStop.h"
-    #import "NTDeparture.h"
-    #import "NTDirection.h"
+    #import "NTSService.h"
+    #import "NTSRoute.h"
+    #import "NTSStop.h"
+    #import "NTSDeparture.h"
+    #import "NTSDirection.h"
 
 #endif /* _NEXTRIPSERVICE */

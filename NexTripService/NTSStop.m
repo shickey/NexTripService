@@ -1,14 +1,14 @@
 //
-//  NTStopVO.m
+//  NTSStop.m
 //  NexTripService
 //
 //  Created by Sean Hickey on 11/23/13.
 //
 //
 
-#import "NTStop.h"
+#import "NTSStop.h"
 
-@implementation NTStop
+@implementation NTSStop
 
 + (NSDictionary *)jsonMapping
 {

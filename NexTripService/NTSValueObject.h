@@ -1,5 +1,5 @@
 //
-//  NTValueObject.h
+//  NTSValueObject.h
 //  NexTripService
 //
 //  Created by Sean Hickey on 11/23/13.
@@ -8,12 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-typedef enum NTJSONValueType : NSUInteger {
-    NTJSONValueTypeString   = 0,
-    NTJSONValueTypeDate     = 1
-} NTJSONValueType;
+typedef enum NTSJSONValueType : NSUInteger {
+    NTSJSONValueTypeString   = 0,
+    NTSJSONValueTypeDate     = 1
+} NTSJSONValueType;
 
-@interface NTValueObject : NSObject
+@interface NTSValueObject : NSObject
 
 + (id)valueObjectFromJSON:(NSDictionary *)json;
 + (NSDictionary *)jsonMapping;

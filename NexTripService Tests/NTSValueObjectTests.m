@@ -1,5 +1,5 @@
 //
-//  NTValueObjectTests.m
+//  NTSValueObjectTests.m
 //  NexTripService Tests
 //
 //  Created by Sean Hickey on 11/23/13.
@@ -10,7 +10,7 @@
 #import "NexTripService.h"
 #import "NSDate+NexTripService.h"
 
-@interface NTValueObjectTests : XCTestCase
+@interface NTSValueObjectTests : XCTestCase
 
 - (NSDictionary *)validRouteDictionary;
 - (NSDictionary *)validStopDictionary;
@@ -18,7 +18,7 @@
 
 @end
 
-@implementation NTValueObjectTests
+@implementation NTSValueObjectTests
 
 - (void)setUp
 {
@@ -35,7 +35,7 @@
 - (void)testCreatesRouteVOWithValidRouteDictionary
 {
     NSDictionary *routeDict = [self validRouteDictionary];
-    NTRoute *vo = [NTRoute valueObjectFromJSON:routeDict];
+    NTSRoute *vo = [NTSRoute valueObjectFromJSON:routeDict];
     XCTAssertEqual(routeDict[@"Description"], vo.routeDescription, @"Route description was not set properly. Expected %@, Got %@", routeDict[@"Description"], vo.routeDescription);
     XCTAssert([routeDict[@"ProviderID"] integerValue] == vo.providerId, @"Provider Id was not set properly. Expected %@, Got %ld", routeDict[@"ProviderID"], (long)vo.providerId);
     XCTAssert([routeDict[@"Route"] integerValue] == vo.routeNumber, @"Route number was not set properly. Expected %@, Got %ld", routeDict[@"Route"], (long)vo.routeNumber);
@@ -44,7 +44,7 @@
 - (void)testCreatesStopVOWithValidStopDictionary
 {
     NSDictionary *stopDict = [self validStopDictionary];
-    NTStop *vo = [NTStop valueObjectFromJSON:stopDict];
+    NTSStop *vo = [NTSStop valueObjectFromJSON:stopDict];
     XCTAssertEqual(stopDict[@"Text"], vo.name, @"Stop name was not set properly. Expected %@, Got %@", stopDict[@"Text"], vo.name);
     XCTAssertEqual(stopDict[@"Value"], vo.identifier, @"Stop identifier was not set properly. Expected %@, Got %@", stopDict[@"Value"], vo.identifier);
 }
@@ -52,7 +52,7 @@
 - (void)testCreatesDepartureVOWithValidDepartureDictionary
 {
     NSDictionary *timeDict = [self validDepartureDictionary];
-    NTDeparture *vo = [NTDeparture valueObjectFromJSON:timeDict];
+    NTSDeparture *vo = [NTSDeparture valueObjectFromJSON:timeDict];
     XCTAssertEqual(timeDict[@"Actual"], vo.actual, @"Time actual boolean was not set properly. Expected %@, Got %@", timeDict[@"Actual"], vo.actual);
     XCTAssertEqual(timeDict[@"VehicleLongitude"], vo.longitude, @"Time logitiude was not set properly. Expected %@, Got %@", timeDict[@"VehicleLongitude"], vo.longitude);
     XCTAssertEqual(timeDict[@"VehicleLatitude"], vo.latitude, @"Time logitiude was not set properly. Expected %@, Got %@", timeDict[@"VehicleLatitude"], vo.latitude);

@@ -1,14 +1,14 @@
 //
-//  NTRouteVO.m
+//  NTSRoute.m
 //  NexTripService
 //
 //  Created by Sean Hickey on 11/23/13.
 //
 //
 
-#import "NTRoute.h"
+#import "NTSRoute.h"
 
-@implementation NTRoute
+@implementation NTSRoute
 
 + (NSDictionary *)jsonMapping
 {

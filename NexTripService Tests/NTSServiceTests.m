@@ -1,5 +1,5 @@
 //
-//  NTServiceTests.m
+//  NTSServiceTests.m
 //  NexTripService
 //
 //  Created by Sean Hickey on 11/24/13.
@@ -7,22 +7,22 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "NTService.h"
-#import "NTRoute.h"
-#import "NTDirection.h"
-#import "NTStop.h"
+#import "NTSService.h"
+#import "NTSRoute.h"
+#import "NTSDirection.h"
+#import "NTSStop.h"
 #import "TRVSMonitor.h"
 
-@interface NTServiceTests : XCTestCase
+@interface NTSServiceTests : XCTestCase
 
-- (NTRoute *)validRoute;
-- (NTDirection *)validDirection;
-- (NTStop *)validStop;
+- (NTSRoute *)validRoute;
+- (NTSDirection *)validDirection;
+- (NTSStop *)validStop;
 - (NSInteger)validStopNumber;
 
 @end
 
-@implementation NTServiceTests
+@implementation NTSServiceTests
 
 - (void)setUp
 {
@@ -40,7 +40,7 @@
 {
     __block TRVSMonitor *monitor = [TRVSMonitor monitor];
     __block NSArray *returnedRoutes = nil;
-    NTService *service = [[NTService alloc] init];
+    NTSService *service = [[NTSService alloc] init];
     [service requestRoutesWithCompletion:^(NSArray *routes, NSError *error) {
         returnedRoutes = routes;
         [monitor signal];
@@ -55,7 +55,7 @@
 {
     __block TRVSMonitor *monitor = [TRVSMonitor monitor];
     __block NSArray *returnedDirections = nil;
-    NTService *service = [[NTService alloc] init];
+    NTSService *service = [[NTSService alloc] init];
     [service requestDirectionsForRoute:[self validRoute].routeNumber withCompletion:^(NSArray *directions, NSError *error) {
         returnedDirections = directions;
         [monitor signal];
@@ -70,7 +70,7 @@
 {
     __block TRVSMonitor *monitor = [TRVSMonitor monitor];
     __block NSArray *returnedStops = nil;
-    NTService *service = [[NTService alloc] init];
+    NTSService *service = [[NTSService alloc] init];
     [service requestStopsForRoute:[self validRoute].routeNumber direction:[self validDirection].direction withCompletion:^(NSArray *stops, NSError *error) {
         returnedStops = stops;
         [monitor signal];
@@ -85,7 +85,7 @@
 {
     __block TRVSMonitor *monitor = [TRVSMonitor monitor];
     __block NSArray *returnedDepartures = nil;
-    NTService *service = [[NTService alloc] init];
+    NTSService *service = [[NTSService alloc] init];
     [service requestDeparturesForRoute:[self validRoute].routeNumber
                              direction:[self validDirection].direction
                                   stop:[self validStop].identifier
@@ -102,7 +102,7 @@
 {
     __block TRVSMonitor *monitor = [TRVSMonitor monitor];
     __block NSArray *returnedDepartures = nil;
-    NTService *service = [[NTService alloc] init];
+    NTSService *service = [[NTSService alloc] init];
     [service requestDeparturesForStopNumber:[self validStopNumber]
                         withCompletion:^(NSArray *departures, NSError *error) {
                             returnedDepartures = departures;
@@ -116,22 +116,22 @@
 
 #pragma mark - Helper Methods
 
-- (NTRoute *)validRoute
+- (NTSRoute *)validRoute
 {
-    return [NTRoute valueObjectFromJSON:@{@"ProviderID"  : @"8",
+    return [NTSRoute valueObjectFromJSON:@{@"ProviderID"  : @"8",
                                           @"Route"       : @"21",
                                           @"Description" : @"21 - Uptown - Lake St - Selby  Av"}];
 }
 
-- (NTDirection *)validDirection
+- (NTSDirection *)validDirection
 {
-    return [NTDirection valueObjectFromJSON:@{@"Text"  : @"EASTBOUND",
+    return [NTSDirection valueObjectFromJSON:@{@"Text"  : @"EASTBOUND",
                                               @"Value" : @"2"}];
 }
 
-- (NTStop *)validStop
+- (NTSStop *)validStop
 {
-    return [NTStop valueObjectFromJSON:@{@"Text"  : @"Lake St/Midtown Station (Hiawatha Ave)",
+    return [NTSStop valueObjectFromJSON:@{@"Text"  : @"Lake St/Midtown Station (Hiawatha Ave)",
                                          @"Value" : @"LAHI"}];
 }
 

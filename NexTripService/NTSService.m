@@ -1,20 +1,20 @@
 //
-//  NTService.m
+//  NTSService.m
 //  NexTripService
 //
 //  Created by Sean Hickey on 11/24/13.
 //
 //
 
-#import "NTService.h"
-#import "NTConstants.h"
-#import "NTRoute.h"
-#import "NTDirection.h"
-#import "NTStop.h"
-#import "NTDeparture.h"
+#import "NTSService.h"
+#import "NTSConstants.h"
+#import "NTSRoute.h"
+#import "NTSDirection.h"
+#import "NTSStop.h"
+#import "NTSDeparture.h"
 #import "AFNetworking.h"
 
-@interface NTService ()
+@interface NTSService ()
 
 @property (strong, nonatomic) AFHTTPRequestOperationManager *manager;
 
@@ -23,7 +23,7 @@
 @end
 
 
-@implementation NTService
+@implementation NTSService
 
 #pragma mark - Initializers
 
@@ -48,7 +48,7 @@
             NSArray *json = (NSArray *)responseObject;
             NSMutableArray *routeVOs = [[NSMutableArray alloc] init];
             for (NSDictionary *jsonRoute in json) {
-                NTRoute *routeVO = [NTRoute valueObjectFromJSON:jsonRoute];
+                NTSRoute *routeVO = [NTSRoute valueObjectFromJSON:jsonRoute];
                 [routeVOs addObject:routeVO];
             }
             NSArray *immutableRoutes = [NSArray arrayWithArray:routeVOs];
@@ -70,7 +70,7 @@
             NSArray *json = (NSArray *)responseObject;
             NSMutableArray *directionVOs = [[NSMutableArray alloc] init];
             for (NSDictionary *jsonDirection in json) {
-                NTDirection *directionVO = [NTDirection valueObjectFromJSON:jsonDirection];
+                NTSDirection *directionVO = [NTSDirection valueObjectFromJSON:jsonDirection];
                 [directionVOs addObject:directionVO];
             }
             NSArray *immutableDirections = [NSArray arrayWithArray:directionVOs];
@@ -84,7 +84,7 @@
 }
 
 - (void)requestStopsForRoute:(NSInteger)routeNumber
-                   direction:(NTDirectionValue)direction
+                   direction:(NTSDirectionValue)direction
               withCompletion:(void (^)(NSArray *, NSError *))completion
 {
     NSString *endpoint = [NSString stringWithFormat:@"Stops/%ld/%ld", (long)routeNumber, (long)direction];
@@ -93,7 +93,7 @@
             NSArray *json = (NSArray *)responseObject;
             NSMutableArray *stopVOs = [[NSMutableArray alloc] init];
             for (NSDictionary *jsonStop in json) {
-                NTStop *stopVO = [NTStop valueObjectFromJSON:jsonStop];
+                NTSStop *stopVO = [NTSStop valueObjectFromJSON:jsonStop];
                 [stopVOs addObject:stopVO];
             }
             NSArray *immutableStops = [NSArray arrayWithArray:stopVOs];
@@ -107,7 +107,7 @@
 }
 
 - (void)requestDeparturesForRoute:(NSInteger)routeNumber
-                        direction:(NTDirectionValue)direction
+                        direction:(NTSDirectionValue)direction
                              stop:(NSString *)stopIdentifier
                    withCompletion:(void (^)(NSArray *, NSError *))completion
 {
@@ -117,7 +117,7 @@
             NSArray *json = (NSArray *)responseObject;
             NSMutableArray *departureVOs = [[NSMutableArray alloc] init];
             for (NSDictionary *jsonDeparture in json) {
-                NTDeparture *departure = [NTDeparture valueObjectFromJSON:jsonDeparture];
+                NTSDeparture *departure = [NTSDeparture valueObjectFromJSON:jsonDeparture];
                 [departureVOs addObject:departure];
             }
             NSArray *immutableDepartures = [NSArray arrayWithArray:departureVOs];
@@ -140,7 +140,7 @@
             NSArray *json = (NSArray *)responseObject;
             NSMutableArray *departureVOs = [[NSMutableArray alloc] init];
             for (NSDictionary *jsonDeparture in json) {
-                NTDeparture *departure = [NTDeparture valueObjectFromJSON:jsonDeparture];
+                NTSDeparture *departure = [NTSDeparture valueObjectFromJSON:jsonDeparture];
                 [departureVOs addObject:departure];
             }
             NSArray *immutableDepartures = [NSArray arrayWithArray:departureVOs];
@@ -157,7 +157,7 @@
 
 - (NSURL *)baseURL
 {
-    return [NSURL URLWithString:kNTBaseURLString];
+    return [NSURL URLWithString:kNTSBaseURLString];
 }
 
 @end

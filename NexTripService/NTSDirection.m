@@ -1,14 +1,14 @@
 //
-//  NTDirection.m
+//  NTSDirection.m
 //  NexTripService
 //
 //  Created by Sean Hickey on 11/24/13.
 //
 //
 
-#import "NTDirection.h"
+#import "NTSDirection.h"
 
-@implementation NTDirection
+@implementation NTSDirection
 
 + (NSDictionary *)jsonMapping
 {
@@ -18,16 +18,16 @@
 - (NSString *)metroTransitString
 {
     switch (self.direction) {
-        case NTDirectionSouthbound:
+        case NTSDirectionSouthbound:
             return @"SOUTHBOUND";
             break;
-        case NTDirectionEastbound:
+        case NTSDirectionEastbound:
             return @"EASTBOUND";
             break;
-        case NTDirectionWestbound:
+        case NTSDirectionWestbound:
             return @"WESTBOUND";
             break;
-        case NTDirectionNorthbound:
+        case NTSDirectionNorthbound:
             return @"NORTHBOUND";
             break;
         default:
@@ -56,7 +56,7 @@
     if (![object isKindOfClass:[self class]]) {
         return NO;
     }
-    NTDirection *directionObject = (NTDirection *)object;
+    NTSDirection *directionObject = (NTSDirection *)object;
     if (self.direction == directionObject.direction) {
         return YES;
     }
