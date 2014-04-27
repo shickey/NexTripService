@@ -43,8 +43,6 @@
 		A31DA350184264050011D294 /* TRVSMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA34F184264050011D294 /* TRVSMonitor.m */; };
 		A31DA35318426CAA0011D294 /* NTSDirection.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA35218426CAA0011D294 /* NTSDirection.m */; };
 		A31DA3551842722B0011D294 /* NTSDirectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA3541842722B0011D294 /* NTSDirectionTests.m */; };
-		A31DA3581842C9470011D294 /* NTTransitDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA3571842C9470011D294 /* NTTransitDataService.m */; };
-		A31DA35A1842CBDD0011D294 /* NTTransitDataServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA3591842CBDD0011D294 /* NTTransitDataServiceTests.m */; };
 		A37676EC1841BC31004387F9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A37676EA1841BC31004387F9 /* InfoPlist.strings */; };
 		A39516D8184D94B300C79FB5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A31DA33F184260560011D294 /* Foundation.framework */; };
 		A39516F9184D953E00C79FB5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A31DA347184260910011D294 /* Security.framework */; };
@@ -52,7 +50,6 @@
 		A39516FB184D955D00C79FB5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A31DA343184260640011D294 /* CoreGraphics.framework */; };
 		A39516FC184D958900C79FB5 /* NSDate+NexTripService.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA31C18425E7D0011D294 /* NSDate+NexTripService.m */; };
 		A39516FD184D958900C79FB5 /* NTSService.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA31918425E750011D294 /* NTSService.m */; };
-		A39516FE184D958900C79FB5 /* NTTransitDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA3571842C9470011D294 /* NTTransitDataService.m */; };
 		A39516FF184D958900C79FB5 /* NTSValueObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A37676DC1841BC01004387F9 /* NTSValueObject.m */; };
 		A3951700184D958900C79FB5 /* NTSRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA30F18425E550011D294 /* NTSRoute.m */; };
 		A3951701184D958900C79FB5 /* NTSStop.m in Sources */ = {isa = PBXBuildFile; fileRef = A31DA31118425E550011D294 /* NTSStop.m */; };
@@ -136,9 +133,6 @@
 		A31DA35118426CAA0011D294 /* NTSDirection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTSDirection.h; sourceTree = "<group>"; };
 		A31DA35218426CAA0011D294 /* NTSDirection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTSDirection.m; sourceTree = "<group>"; };
 		A31DA3541842722B0011D294 /* NTSDirectionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTSDirectionTests.m; sourceTree = "<group>"; };
-		A31DA3561842C9470011D294 /* NTTransitDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTTransitDataService.h; sourceTree = "<group>"; };
-		A31DA3571842C9470011D294 /* NTTransitDataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTTransitDataService.m; sourceTree = "<group>"; };
-		A31DA3591842CBDD0011D294 /* NTTransitDataServiceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTTransitDataServiceTests.m; sourceTree = "<group>"; };
 		A37676D81841BC01004387F9 /* NexTripService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NexTripService.h; sourceTree = "<group>"; };
 		A37676DB1841BC01004387F9 /* NTSValueObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTSValueObject.h; sourceTree = "<group>"; };
 		A37676DC1841BC01004387F9 /* NTSValueObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTSValueObject.m; sourceTree = "<group>"; };
@@ -191,8 +185,6 @@
 			children = (
 				A31DA31818425E750011D294 /* NTSService.h */,
 				A31DA31918425E750011D294 /* NTSService.m */,
-				A31DA3561842C9470011D294 /* NTTransitDataService.h */,
-				A31DA3571842C9470011D294 /* NTTransitDataService.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -318,7 +310,6 @@
 				A31DA30718425E410011D294 /* NTSServiceTests.m */,
 				A31DA30818425E410011D294 /* NTSValueObjectTests.m */,
 				A31DA3541842722B0011D294 /* NTSDirectionTests.m */,
-				A31DA3591842CBDD0011D294 /* NTTransitDataServiceTests.m */,
 				A31DA34C184263D60011D294 /* Libraries */,
 				A37676E81841BC31004387F9 /* Supporting Files */,
 			);
@@ -416,9 +407,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A31DA33B18425E8A0011D294 /* AFURLSessionManager.m in Sources */,
-				A31DA3581842C9470011D294 /* NTTransitDataService.m in Sources */,
 				A31DA34B184260A80011D294 /* NTSConstants.m in Sources */,
-				A31DA35A1842CBDD0011D294 /* NTTransitDataServiceTests.m in Sources */,
 				A31DA33818425E8A0011D294 /* AFURLConnectionOperation.m in Sources */,
 				A31DA33318425E8A0011D294 /* AFHTTPRequestOperation.m in Sources */,
 				A31DA30918425E410011D294 /* NSDate+NexTripServiceTests.m in Sources */,
@@ -448,7 +437,6 @@
 			files = (
 				A39516FC184D958900C79FB5 /* NSDate+NexTripService.m in Sources */,
 				A39516FD184D958900C79FB5 /* NTSService.m in Sources */,
-				A39516FE184D958900C79FB5 /* NTTransitDataService.m in Sources */,
 				A39516FF184D958900C79FB5 /* NTSValueObject.m in Sources */,
 				A3951700184D958900C79FB5 /* NTSRoute.m in Sources */,
 				A3951701184D958900C79FB5 /* NTSStop.m in Sources */,
