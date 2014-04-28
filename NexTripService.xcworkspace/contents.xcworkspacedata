@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:NexTripService"
+      name = "NexTripService">
+      <FileRef
+         location = "group:NexTripService.h">
+      </FileRef>
+      <FileRef
+         location = "group:NSDate+NexTripService.h">
+      </FileRef>
+      <FileRef
+         location = "group:NSDate+NexTripService.m">
+      </FileRef>
+      <FileRef
+         location = "group:NTSConstants.h">
+      </FileRef>
+      <FileRef
+         location = "group:NTSConstants.m">
+      </FileRef>
+      <FileRef
+         location = "group:NTSDeparture.h">
+      </FileRef>
+      <FileRef
+         location = "group:NTSDeparture.m">
+      </FileRef>
+      <FileRef
+         location = "group:NTSDirection.h">
+      </FileRef>
+      <FileRef
+         location = "group:NTSDirection.m">
+      </FileRef>
+      <FileRef
+         location = "group:NTSRoute.h">
+      </FileRef>
+      <FileRef
+         location = "group:NTSRoute.m">
+      </FileRef>
+      <FileRef
+         location = "group:NTSService.h">
+      </FileRef>
+      <FileRef
+         location = "group:NTSService.m">
+      </FileRef>
+      <FileRef
+         location = "group:NTSStop.h">
+      </FileRef>
+      <FileRef
+         location = "group:NTSStop.m">
+      </FileRef>
+      <FileRef
+         location = "group:NTSValueObject.h">
+      </FileRef>
+      <FileRef
+         location = "group:NTSValueObject.m">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:NexTripService Tests/NexTripService Tests.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:NexTripService Tests/Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

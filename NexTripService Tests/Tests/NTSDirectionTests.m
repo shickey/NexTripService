@@ -36,7 +36,7 @@
 - (void)testCreatesDirectionVOWithValidDirectionDictionary
 {
     NTSDirection *vo = [NTSDirection valueObjectFromJSON:[self validDirectionDictionary]];
-    XCTAssert(vo.direction == NTDirectionEastbound);
+    XCTAssert(vo.direction == NTSDirectionEastbound);
 }
 
 - (void)testIsEqualMethod

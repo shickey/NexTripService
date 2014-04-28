@@ -5,22 +5,6 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
-      <BuildActionEntries>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A3F37415184D8AB3008DD8E9"
-               BuildableName = "libNexTripService.a"
-               BlueprintName = "NexTripService"
-               ReferencedContainer = "container:NexTripService.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-      </BuildActionEntries>
    </BuildAction>
    <TestAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -29,13 +13,23 @@
       buildConfiguration = "Debug">
       <Testables>
          <TestableReference
+            skipped = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A3BA9296190DF61600DFE434"
+               BuildableName = "iOS Tests.xctest"
+               BlueprintName = "iOS Tests"
+               ReferencedContainer = "container:NexTripService Tests.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A3F37422184D8AB3008DD8E9"
-               BuildableName = "NexTripServiceTests.xctest"
-               BlueprintName = "NexTripServiceTests"
-               ReferencedContainer = "container:NexTripService.xcodeproj">
+               BlueprintIdentifier = "A3BA92AF190DF63000DFE434"
+               BuildableName = "OS X Tests.xctest"
+               BlueprintName = "OS X Tests"
+               ReferencedContainer = "container:NexTripService Tests.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>

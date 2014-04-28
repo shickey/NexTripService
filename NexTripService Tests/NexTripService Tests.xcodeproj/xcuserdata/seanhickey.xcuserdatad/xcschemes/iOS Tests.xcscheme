@@ -16,10 +16,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A37676E11841BC31004387F9"
-               BuildableName = "NexTripService Tests.xctest"
-               BlueprintName = "NexTripService Tests"
-               ReferencedContainer = "container:NexTripService.xcodeproj">
+               BlueprintIdentifier = "A3BA9296190DF61600DFE434"
+               BuildableName = "iOS Tests.xctest"
+               BlueprintName = "iOS Tests"
+               ReferencedContainer = "container:NexTripService Tests.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A3BA92AF190DF63000DFE434"
+               BuildableName = "OS X Tests.xctest"
+               BlueprintName = "OS X Tests"
+               ReferencedContainer = "container:NexTripService Tests.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>

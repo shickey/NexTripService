@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:NexTripService.xcodeproj">
+      location = "self:NexTripService Tests.xcodeproj">
    </FileRef>
 </Workspace>
