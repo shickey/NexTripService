@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-typedef enum NTSDirectionValue : NSUInteger {
+typedef enum NTSDirectionValue : NSInteger {
     NTSDirectionSouthbound   = 1,
     NTSDirectionEastbound    = 2,
     NTSDirectionWestbound    = 3,
